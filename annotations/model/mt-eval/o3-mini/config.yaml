@@ -1,0 +1,57 @@
+annotation_span_categories:
+- name: Major
+  description: An error that disrupts the flow and make the understandability of text
+    difficult or impossible.
+- name: Minor
+  description: An error that does not disrupt the flow significantly and what the
+    text is trying to say is still understandable.
+prompt_template: 'Your task is to identify errors in the translation and classify
+  them.
+
+
+  Output the errors as a JSON object with a single key "annotations". The value of
+  "annotations" is a list in which each object contains fields "reason", "text", and
+  "annotation_type". The value of "reason" is the short sentence justifying the annotation.
+  The value of "text" is the literal value of the identified span (we will later identify
+  the span using string matching). The value of "annotation_type" is an integer index
+  of the error based on the following list:
+
+
+  0: Major (An error that disrupts the flow and make the understandability of text
+  difficult or impossible.)
+
+  1: Minor (An error that does not disrupt the flow significantly and what the text
+  is trying to say is still understandable.)
+
+
+  Error spans can include parts of the words, whole words, or multi-word phrases.
+
+
+  Hint: errors are usually accuracy-related (addition, mistranslation, omission, untranslated
+  text), fluency-related (character encoding, grammar, inconsistency, punctuation,
+  register, spelling), style-related (awkward), terminology (inappropriate for context,
+  inconsistent use).
+
+
+  Make sure that the annotations are not overlapping. If there is nothing to annotate
+  in the text, "annotations" will be an empty list.
+
+
+  Given the source:
+
+  ```
+
+  {data}
+
+  ```
+
+  annotate its translation:
+
+  ```
+
+  {text}
+
+  ```'
+model: o3-mini-2025-01-31
+model_args: {}
+campaign_orig_id: mt-zeroshot-o3-mini

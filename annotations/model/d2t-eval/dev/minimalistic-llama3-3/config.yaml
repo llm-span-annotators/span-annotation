@@ -1,0 +1,60 @@
+annotation_span_categories:
+- name: Contradictory
+  description: The fact contradicts the data.
+- name: Not checkable
+  description: The fact cannot be verified from the data.
+- name: Misleading
+  description: The fact is technically true, but leaves out important information
+    or otherwise distorts the context.
+- name: Incoherent
+  description: The text uses unnatural phrasing or does not fit the discourse.
+- name: Repetitive
+  description: The fact has been already mentioned earlier in the text.
+- name: Other
+  description: The text is problematic for another reason.
+prompt_template: 'Your task is to identify errors in the text and classify them.
+
+
+  Output the errors as a JSON object with a single key "annotations". The value of
+  "annotations" is a list in which each object contains fields "reason", "text", and
+  "annotation_type". The value of "reason" is the short sentence justifying the annotation.
+  The value of "text" is the literal value of the text inside the highlighted span.
+  be identified using string matching. The value of "annotation_type" is an integer
+  index of the error based on the following list:
+
+
+  0: Contradictory (The fact contradicts the data.)
+
+  1: Not checkable (The fact cannot be verified from the data.)
+
+  2: Misleading (The fact is technically true, but leaves out important information
+  or otherwise distorts the context.)
+
+  3: Incoherent (The text uses unnatural phrasing or does not fit the discourse.)
+
+  4: Repetitive (The fact has been already mentioned earlier in the text.)
+
+  5: Other (The text is problematic for another reason.)
+
+
+  If there is nothing to annotate in the text, "annotations" will be an empty list.
+
+
+  Given the data:
+
+  ```
+
+  {data}
+
+  ```
+
+  annotate the errors in the corresponding text generated from the data:
+
+  ```
+
+  {text}
+
+  ```'
+model: llama3.3:70b
+model_args: {}
+campaign_orig_id: gold-final-minimalistic-llama3-3

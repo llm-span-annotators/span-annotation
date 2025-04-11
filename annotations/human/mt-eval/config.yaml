@@ -1,0 +1,6 @@
+annotation_span_categories:
+- name: Major
+  description: A major error.
+- name: Minor
+  description: A minor error.
+campaign_orig_id: wmt24-sample

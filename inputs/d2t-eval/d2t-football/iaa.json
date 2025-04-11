@@ -1,0 +1,448 @@
+[
+  {
+    "fixture": {
+      "id": 1183380,
+      "referee": "Rafael Rodrigo Klein",
+      "timezone": "UTC",
+      "date": "2024-11-17T00:30:00+00:00",
+      "timestamp": 1731803400,
+      "periods": {
+        "first": 1731803400,
+        "second": 1731807000
+      },
+      "venue": {
+        "id": 261,
+        "name": "Estádio Moisés Lucarelli",
+        "city": "Campinas, São Paulo"
+      },
+      "status": {
+        "long": "Match Finished",
+        "short": "FT",
+        "elapsed": 90,
+        "extra": 3
+      }
+    },
+    "league": {
+      "id": 72,
+      "name": "Serie B",
+      "country": "Brazil",
+      "logo": "https://media.api-sports.io/football/leagues/72.png",
+      "flag": "https://media.api-sports.io/flags/br.svg",
+      "season": 2024,
+      "round": "Regular Season - 37",
+      "standings": true
+    },
+    "teams": {
+      "home": {
+        "id": 139,
+        "name": "Ponte Preta",
+        "logo": "https://media.api-sports.io/football/teams/139.png",
+        "winner": false
+      },
+      "away": {
+        "id": 123,
+        "name": "Sport Recife",
+        "logo": "https://media.api-sports.io/football/teams/123.png",
+        "winner": true
+      }
+    },
+    "goals": {
+      "home": 0,
+      "away": 4
+    },
+    "score": {
+      "halftime": {
+        "home": 0,
+        "away": 2
+      },
+      "fulltime": {
+        "home": 0,
+        "away": 4
+      },
+      "extratime": {
+        "home": null,
+        "away": null
+      },
+      "penalty": {
+        "home": null,
+        "away": null
+      }
+    },
+    "events": [
+      {
+        "time": {
+          "elapsed": 7,
+          "extra": null
+        },
+        "team": {
+          "id": 123,
+          "name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "player": {
+          "id": 237706,
+          "name": "Chrystian Barletta"
+        },
+        "assist": {
+          "id": 9918,
+          "name": "Lucas Lima"
+        },
+        "type": "Goal",
+        "detail": "Normal Goal",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 24,
+          "extra": null
+        },
+        "team": {
+          "id": 139,
+          "name": "Ponte Preta",
+          "logo": "https://media.api-sports.io/football/teams/139.png"
+        },
+        "player": {
+          "id": 166711,
+          "name": "Luiz Felipe"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Red Card",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 34,
+          "extra": null
+        },
+        "team": {
+          "id": 123,
+          "name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "player": {
+          "id": 126868,
+          "name": "F. Domínguez"
+        },
+        "assist": {
+          "id": 292170,
+          "name": "Lenny Lobato"
+        },
+        "type": "Goal",
+        "detail": "Normal Goal",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 38,
+          "extra": null
+        },
+        "team": {
+          "id": 139,
+          "name": "Ponte Preta",
+          "logo": "https://media.api-sports.io/football/teams/139.png"
+        },
+        "player": {
+          "id": 9398,
+          "name": "Élvis"
+        },
+        "assist": {
+          "id": 316950,
+          "name": "Hudson"
+        },
+        "type": "subst",
+        "detail": "Substitution 1",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 40,
+          "extra": null
+        },
+        "team": {
+          "id": 139,
+          "name": "Ponte Preta",
+          "logo": "https://media.api-sports.io/football/teams/139.png"
+        },
+        "player": {
+          "id": 195578,
+          "name": "Igor Inocencio"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 46,
+          "extra": null
+        },
+        "team": {
+          "id": 123,
+          "name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "player": {
+          "id": 39797,
+          "name": "C. Ortíz"
+        },
+        "assist": {
+          "id": 10398,
+          "name": "Wellington Silva"
+        },
+        "type": "subst",
+        "detail": "Substitution 1",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 46,
+          "extra": null
+        },
+        "team": {
+          "id": 139,
+          "name": "Ponte Preta",
+          "logo": "https://media.api-sports.io/football/teams/139.png"
+        },
+        "player": {
+          "id": 195578,
+          "name": "Igor Inocêncio"
+        },
+        "assist": {
+          "id": 405893,
+          "name": "João Gabriel"
+        },
+        "type": "subst",
+        "detail": "Substitution 2",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 48,
+          "extra": null
+        },
+        "team": {
+          "id": 123,
+          "name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "player": {
+          "id": 9560,
+          "name": "Rafael Thyere"
+        },
+        "assist": {
+          "id": 9558,
+          "name": "Chico"
+        },
+        "type": "Goal",
+        "detail": "Normal Goal",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 61,
+          "extra": null
+        },
+        "team": {
+          "id": 123,
+          "name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "player": {
+          "id": 237706,
+          "name": "Chrystian Barletta"
+        },
+        "assist": {
+          "id": 180924,
+          "name": "Pedro Vilhena"
+        },
+        "type": "subst",
+        "detail": "Substitution 2",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 61,
+          "extra": null
+        },
+        "team": {
+          "id": 123,
+          "name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "player": {
+          "id": 11605,
+          "name": "J. Fernández"
+        },
+        "assist": {
+          "id": 10417,
+          "name": "Felipe"
+        },
+        "type": "subst",
+        "detail": "Substitution 3",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 66,
+          "extra": null
+        },
+        "team": {
+          "id": 139,
+          "name": "Ponte Preta",
+          "logo": "https://media.api-sports.io/football/teams/139.png"
+        },
+        "player": {
+          "id": 10189,
+          "name": "Renato"
+        },
+        "assist": {
+          "id": 306885,
+          "name": "Dodô"
+        },
+        "type": "subst",
+        "detail": "Substitution 3",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 66,
+          "extra": null
+        },
+        "team": {
+          "id": 139,
+          "name": "Ponte Preta",
+          "logo": "https://media.api-sports.io/football/teams/139.png"
+        },
+        "player": {
+          "id": 10385,
+          "name": "Emerson"
+        },
+        "assist": {
+          "id": 9610,
+          "name": "Ramon"
+        },
+        "type": "subst",
+        "detail": "Substitution 4",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 70,
+          "extra": null
+        },
+        "team": {
+          "id": 123,
+          "name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "player": {
+          "id": 126868,
+          "name": "F. Domínguez"
+        },
+        "assist": {
+          "id": 10279,
+          "name": "Fabinho"
+        },
+        "type": "subst",
+        "detail": "Substitution 4",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 77,
+          "extra": null
+        },
+        "team": {
+          "id": 139,
+          "name": "Ponte Preta",
+          "logo": "https://media.api-sports.io/football/teams/139.png"
+        },
+        "player": {
+          "id": 106591,
+          "name": "Gabriel Novaes"
+        },
+        "assist": {
+          "id": 237670,
+          "name": "Matheus Régis"
+        },
+        "type": "subst",
+        "detail": "Substitution 5",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 84,
+          "extra": null
+        },
+        "team": {
+          "id": 123,
+          "name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "player": {
+          "id": 9558,
+          "name": "Chico"
+        },
+        "assist": {
+          "id": 10448,
+          "name": "Luciano Castán"
+        },
+        "type": "subst",
+        "detail": "Substitution 5",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 85,
+          "extra": null
+        },
+        "team": {
+          "id": 123,
+          "name": "Sport Recife",
+          "logo": "https://media.api-sports.io/football/teams/123.png"
+        },
+        "player": {
+          "id": 10279,
+          "name": "Fabinho"
+        },
+        "assist": {
+          "id": 9918,
+          "name": "Lucas Lima"
+        },
+        "type": "Goal",
+        "detail": "Normal Goal",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 89,
+          "extra": null
+        },
+        "team": {
+          "id": 139,
+          "name": "Ponte Preta",
+          "logo": "https://media.api-sports.io/football/teams/139.png"
+        },
+        "player": {
+          "id": 316950,
+          "name": "Hudson"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": null
+      }
+    ]
+  }
+]

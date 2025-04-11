@@ -1,0 +1,267 @@
+[
+  {
+    "id": "palm_treo_750-1909",
+    "name": "Treo 750",
+    "details": {
+      "name": "Palm Treo 750",
+      "img": "https://fdn2.gsmarena.com/vv/bigpic/palm-treo750.gif",
+      "detailSpec": [
+        {
+          "category": "Network",
+          "specifications": [
+            {
+              "name": "Technology",
+              "value": "GSM / HSPA"
+            },
+            {
+              "name": "2G bands",
+              "value": "GSM 850 / 900 / 1800 / 1900 "
+            },
+            {
+              "name": "3G bands",
+              "value": "HSDPA 850 / 1900 / 2100 "
+            },
+            {
+              "name": "Speed",
+              "value": "Yes, 384 kbps"
+            }
+          ]
+        },
+        {
+          "category": "Launch",
+          "specifications": [
+            {
+              "name": "Announced",
+              "value": "2007, February"
+            },
+            {
+              "name": "Status",
+              "value": "Discontinued"
+            }
+          ]
+        },
+        {
+          "category": "Body",
+          "specifications": [
+            {
+              "name": "Dimensions",
+              "value": "111 x 58 x 22 mm (4.37 x 2.28 x 0.87 in)"
+            },
+            {
+              "name": "Weight",
+              "value": "154 g (5.43 oz)"
+            },
+            {
+              "name": "Keyboard",
+              "value": "QWERTY"
+            },
+            {
+              "name": "SIM",
+              "value": "Mini-SIM"
+            }
+          ]
+        },
+        {
+          "category": "Display",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "TFT resistive touchscreen, 65K colors"
+            },
+            {
+              "name": "Size",
+              "value": "2.5 inches, 20.2 cm2 (~31.3% screen-to-body ratio)"
+            },
+            {
+              "name": "Resolution",
+              "value": "240 x 240 pixels, 1:1 ratio (~136 ppi density)"
+            },
+            {
+              "name": " ",
+              "value": "5-way navigation button"
+            }
+          ]
+        },
+        {
+          "category": "Platform",
+          "specifications": [
+            {
+              "name": "OS",
+              "value": "Microsoft Windows Mobile 5.0 PocketPC"
+            },
+            {
+              "name": "CPU",
+              "value": "300 MHz Samsung"
+            }
+          ]
+        },
+        {
+          "category": "Memory",
+          "specifications": [
+            {
+              "name": "Card slot",
+              "value": "miniSD, up to 2 GB"
+            },
+            {
+              "name": "Internal",
+              "value": "60MB"
+            }
+          ]
+        },
+        {
+          "category": "Main Camera",
+          "specifications": [
+            {
+              "name": "Single",
+              "value": "1.3 MP"
+            },
+            {
+              "name": "Video",
+              "value": "Yes"
+            }
+          ]
+        },
+        {
+          "category": "Selfie camera",
+          "specifications": [
+            {
+              "name": " ",
+              "value": "No"
+            }
+          ]
+        },
+        {
+          "category": "Sound",
+          "specifications": [
+            {
+              "name": "Loudspeaker ",
+              "value": "Yes"
+            },
+            {
+              "name": "Alert types",
+              "value": "Vibration; Downloadable polyphonic, MP3 ringtones"
+            },
+            {
+              "name": "3.5mm jack ",
+              "value": "No"
+            }
+          ]
+        },
+        {
+          "category": "Comms",
+          "specifications": [
+            {
+              "name": "WLAN",
+              "value": "No"
+            },
+            {
+              "name": "Bluetooth",
+              "value": "1.2, A2DP"
+            },
+            {
+              "name": "Positioning",
+              "value": "No"
+            },
+            {
+              "name": "Infrared port",
+              "value": "Yes"
+            },
+            {
+              "name": "Radio",
+              "value": "No"
+            },
+            {
+              "name": "USB",
+              "value": "Proprietary"
+            }
+          ]
+        },
+        {
+          "category": "Features",
+          "specifications": [
+            {
+              "name": "Sensors",
+              "value": ""
+            },
+            {
+              "name": "Browser",
+              "value": "WAP 2.0 / HTML (PocketIE)"
+            },
+            {
+              "name": " ",
+              "value": "MP3/AAC/AAC+/WMA/OGG/AMR player\nWMV/MP4 player\nOrganizer\nPocket Office \nVoice memo"
+            }
+          ]
+        },
+        {
+          "category": "Battery",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "Removable Li-Ion 1200 mAh battery"
+            },
+            {
+              "name": "Stand-by",
+              "value": "Up to 200 h"
+            },
+            {
+              "name": "Talk time",
+              "value": "Up to 4 h 30 min"
+            }
+          ]
+        },
+        {
+          "category": "Misc",
+          "specifications": [
+            {
+              "name": "Colors",
+              "value": "Black"
+            },
+            {
+              "name": "SAR",
+              "value": "0.59 W/kg (head)     0.15 W/kg (body)     "
+            },
+            {
+              "name": "Price",
+              "value": "About 80 EUR"
+            }
+          ]
+        }
+      ],
+      "quickSpec": [
+        {
+          "name": "Display size",
+          "value": "2.5\""
+        },
+        {
+          "name": "Display resolution",
+          "value": "240x240 pixels"
+        },
+        {
+          "name": "Camera pixels",
+          "value": "1.3MP\n      "
+        },
+        {
+          "name": "Video pixels",
+          "value": "Video recorder"
+        },
+        {
+          "name": "RAM size",
+          "value": " "
+        },
+        {
+          "name": "Chipset",
+          "value": ""
+        },
+        {
+          "name": "Battery size",
+          "value": "1200mAh"
+        },
+        {
+          "name": "Battery type",
+          "value": "Li-Ion"
+        }
+      ]
+    }
+  }
+]

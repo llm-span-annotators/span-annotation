@@ -1,0 +1,1801 @@
+[
+  {
+    "id": "plum_gator_7-11076",
+    "name": "Gator 7",
+    "details": {
+      "name": "Plum Gator 7",
+      "img": "https://fdn2.gsmarena.com/vv/bigpic/plum-gator7.jpg",
+      "detailSpec": [
+        {
+          "category": "Network",
+          "specifications": [
+            {
+              "name": "Technology",
+              "value": "GSM / HSPA / LTE"
+            },
+            {
+              "name": "2G bands",
+              "value": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2"
+            },
+            {
+              "name": "3G bands",
+              "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 "
+            },
+            {
+              "name": "4G bands",
+              "value": "2, 4, 5, 7, 12, 17, 25, 26, 28, 41, 66"
+            },
+            {
+              "name": "Speed",
+              "value": "HSPA 42.2/5.76 Mbps, LTE-A (2CA) Cat13 400/150 Mbps"
+            }
+          ]
+        },
+        {
+          "category": "Launch",
+          "specifications": [
+            {
+              "name": "Announced",
+              "value": "2021, September 01"
+            },
+            {
+              "name": "Status",
+              "value": "Available. Released 2021, September 01"
+            }
+          ]
+        },
+        {
+          "category": "Body",
+          "specifications": [
+            {
+              "name": "Dimensions",
+              "value": "157.5 x 78.1 x 13.7 mm (6.20 x 3.07 x 0.54 in)"
+            },
+            {
+              "name": "Weight",
+              "value": "261 g (9.21 oz)"
+            },
+            {
+              "name": "Build",
+              "value": "Glass front (Dragontrail Glass), plastic frame, plastic back"
+            },
+            {
+              "name": "SIM",
+              "value": "Dual SIM (Nano-SIM, dual stand-by)"
+            },
+            {
+              "name": " ",
+              "value": "IP69 dust/water resistant (up to 1.5m for 35 min)\nDrop-to-concrete resistance (up to 1.8m)\nMIL-STD-810H compliant"
+            }
+          ]
+        },
+        {
+          "category": "Display",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "IPS LCD"
+            },
+            {
+              "name": "Size",
+              "value": "5.7 inches, 83.8 cm2 (~68.2% screen-to-body ratio)"
+            },
+            {
+              "name": "Resolution",
+              "value": "720 x 1440 pixels, 18:9 ratio (~282 ppi density)"
+            },
+            {
+              "name": "Protection",
+              "value": "Dragontrail Glass"
+            }
+          ]
+        },
+        {
+          "category": "Platform",
+          "specifications": [
+            {
+              "name": "OS",
+              "value": "Android 11"
+            },
+            {
+              "name": "Chipset",
+              "value": "Mediatek MT6761V/WE (14 nm)"
+            },
+            {
+              "name": "CPU",
+              "value": "Quad-core 2.0 GHz Cortex-A53"
+            },
+            {
+              "name": "GPU",
+              "value": "PowerVR GE8300"
+            }
+          ]
+        },
+        {
+          "category": "Memory",
+          "specifications": [
+            {
+              "name": "Card slot",
+              "value": "microSDXC (dedicated slot)"
+            },
+            {
+              "name": "Internal",
+              "value": "32GB 3GB RAM"
+            },
+            {
+              "name": " ",
+              "value": "eMMC 5.1"
+            }
+          ]
+        },
+        {
+          "category": "Main Camera",
+          "specifications": [
+            {
+              "name": "Single",
+              "value": "8 MP, AF"
+            },
+            {
+              "name": "Features",
+              "value": "LED flash, panorama"
+            },
+            {
+              "name": "Video",
+              "value": "1080p@30fps"
+            }
+          ]
+        },
+        {
+          "category": "Selfie camera",
+          "specifications": [
+            {
+              "name": "Single",
+              "value": "5 MP"
+            },
+            {
+              "name": "Video",
+              "value": "720p@30fps"
+            }
+          ]
+        },
+        {
+          "category": "Sound",
+          "specifications": [
+            {
+              "name": "Loudspeaker ",
+              "value": "Yes"
+            },
+            {
+              "name": "3.5mm jack ",
+              "value": "Yes"
+            }
+          ]
+        },
+        {
+          "category": "Comms",
+          "specifications": [
+            {
+              "name": "WLAN",
+              "value": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct"
+            },
+            {
+              "name": "Bluetooth",
+              "value": "5.0, A2DP, LE"
+            },
+            {
+              "name": "Positioning",
+              "value": "GPS, GLONASS, GALILEO, BDS"
+            },
+            {
+              "name": "NFC",
+              "value": "Yes (market/region dependent)"
+            },
+            {
+              "name": "Radio",
+              "value": "FM radio"
+            },
+            {
+              "name": "USB",
+              "value": "microUSB 2.0, OTG"
+            }
+          ]
+        },
+        {
+          "category": "Features",
+          "specifications": [
+            {
+              "name": "Sensors",
+              "value": "Accelerometer, gyro, proximity, compass"
+            }
+          ]
+        },
+        {
+          "category": "Battery",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "Li-Po 5580 mAh, non-removable"
+            }
+          ]
+        },
+        {
+          "category": "Misc",
+          "specifications": [
+            {
+              "name": "Colors",
+              "value": "Black, Orange"
+            }
+          ]
+        }
+      ],
+      "quickSpec": [
+        {
+          "name": "Display size",
+          "value": "5.7\""
+        },
+        {
+          "name": "Display resolution",
+          "value": "720x1440 pixels"
+        },
+        {
+          "name": "Camera pixels",
+          "value": "8MP\n      "
+        },
+        {
+          "name": "Video pixels",
+          "value": "1080p"
+        },
+        {
+          "name": "RAM size",
+          "value": "3GB RAM"
+        },
+        {
+          "name": "Chipset",
+          "value": "MT6761V"
+        },
+        {
+          "name": "Battery size",
+          "value": "5580mAh"
+        },
+        {
+          "name": "Battery type",
+          "value": "Li-Po"
+        }
+      ]
+    }
+  },
+  {
+    "id": "chea_218-501",
+    "name": "218",
+    "details": {
+      "name": "Chea 218",
+      "detailSpec": [
+        {
+          "category": "Network",
+          "specifications": [
+            {
+              "name": "Technology",
+              "value": "GSM"
+            },
+            {
+              "name": "2G bands",
+              "value": "GSM 900 / 1800 "
+            },
+            {
+              "name": "GPRS",
+              "value": "Yes"
+            },
+            {
+              "name": "EDGE",
+              "value": "No"
+            }
+          ]
+        },
+        {
+          "category": "Launch",
+          "specifications": [
+            {
+              "name": "Announced",
+              "value": "2003, Q3"
+            },
+            {
+              "name": "Status",
+              "value": "Cancelled"
+            }
+          ]
+        },
+        {
+          "category": "Body",
+          "specifications": [
+            {
+              "name": "Dimensions",
+              "value": "85 x 45 x 20 mm (3.35 x 1.77 x 0.79 in)"
+            },
+            {
+              "name": "Weight",
+              "value": "74 g (2.61 oz)"
+            },
+            {
+              "name": "SIM",
+              "value": "Mini-SIM"
+            }
+          ]
+        },
+        {
+          "category": "Display",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "TFT, 65K colors"
+            },
+            {
+              "name": "Size",
+              "value": ""
+            },
+            {
+              "name": "Resolution",
+              "value": "128 x 160 pixels"
+            },
+            {
+              "name": " ",
+              "value": "Second external FSTN monochrome display (96 x 64 pixels)\nScreensavers"
+            }
+          ]
+        },
+        {
+          "category": "Memory",
+          "specifications": [
+            {
+              "name": "Card slot",
+              "value": "No"
+            },
+            {
+              "name": "Phonebook",
+              "value": "150"
+            },
+            {
+              "name": "Call records",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "category": "Camera",
+          "specifications": [
+            {
+              "name": " ",
+              "value": "No"
+            }
+          ]
+        },
+        {
+          "category": "Sound",
+          "specifications": [
+            {
+              "name": "Loudspeaker ",
+              "value": "No"
+            },
+            {
+              "name": "Alert types",
+              "value": "Vibration; Polyphonic ringtones, composer"
+            },
+            {
+              "name": "3.5mm jack ",
+              "value": "No"
+            }
+          ]
+        },
+        {
+          "category": "Comms",
+          "specifications": [
+            {
+              "name": "WLAN",
+              "value": "No"
+            },
+            {
+              "name": "Bluetooth",
+              "value": "No"
+            },
+            {
+              "name": "Positioning",
+              "value": "No"
+            },
+            {
+              "name": "Radio",
+              "value": "No"
+            },
+            {
+              "name": "USB",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "category": "Features",
+          "specifications": [
+            {
+              "name": "Sensors",
+              "value": ""
+            },
+            {
+              "name": "Messaging",
+              "value": "SMS, MMS"
+            },
+            {
+              "name": "Browser",
+              "value": "WAP 1.2.1"
+            },
+            {
+              "name": "Games",
+              "value": "4"
+            },
+            {
+              "name": "Languages",
+              "value": "English"
+            },
+            {
+              "name": "Java",
+              "value": "Yes"
+            },
+            {
+              "name": " ",
+              "value": "Organizer\nVoice memo \nVoice dial"
+            }
+          ]
+        },
+        {
+          "category": "Battery",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "Removable Li-Ion battery"
+            },
+            {
+              "name": "Stand-by",
+              "value": "Up to 200 h"
+            },
+            {
+              "name": "Talk time",
+              "value": "Up to 2 h"
+            }
+          ]
+        },
+        {
+          "category": "Misc",
+          "specifications": [
+            {
+              "name": "Colors",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "quickSpec": [
+        {
+          "name": "Display size",
+          "value": " "
+        },
+        {
+          "name": "Display resolution",
+          "value": "128x160 pixels"
+        },
+        {
+          "name": "Camera pixels",
+          "value": "NO\n      "
+        },
+        {
+          "name": "Video pixels",
+          "value": "No video recorder"
+        },
+        {
+          "name": "RAM size",
+          "value": " "
+        },
+        {
+          "name": "Chipset",
+          "value": ""
+        },
+        {
+          "name": "Battery size",
+          "value": "650mAh"
+        },
+        {
+          "name": "Battery type",
+          "value": "Li-Ion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "wiko_t10-11606",
+    "name": "T10",
+    "details": {
+      "name": "Wiko T10",
+      "img": "https://fdn2.gsmarena.com/vv/bigpic/wiko-t10.jpg",
+      "detailSpec": [
+        {
+          "category": "Network",
+          "specifications": [
+            {
+              "name": "Technology",
+              "value": "GSM / HSPA / LTE"
+            },
+            {
+              "name": "2G bands",
+              "value": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2"
+            },
+            {
+              "name": "3G bands",
+              "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 - W-V673-01"
+            },
+            {
+              "name": " ",
+              "value": "HSDPA 850 / 900 / 1900 / 2100 - W-V673-02"
+            },
+            {
+              "name": "4G bands",
+              "value": "1, 2, 3, 4, 5, 7, 8, 13, 26, 28, 38, 66 - W-V673-01"
+            },
+            {
+              "name": " ",
+              "value": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41 - W-V673-02"
+            },
+            {
+              "name": "Speed",
+              "value": "HSPA, LTE"
+            }
+          ]
+        },
+        {
+          "category": "Launch",
+          "specifications": [
+            {
+              "name": "Announced",
+              "value": "2022, May 26"
+            },
+            {
+              "name": "Status",
+              "value": "Available. Released 2022, May 26"
+            }
+          ]
+        },
+        {
+          "category": "Body",
+          "specifications": [
+            {
+              "name": "Dimensions",
+              "value": "163.9 x 75.8 x 9 mm (6.45 x 2.98 x 0.35 in)"
+            },
+            {
+              "name": "Weight",
+              "value": "192 g (6.77 oz)"
+            },
+            {
+              "name": "SIM",
+              "value": "Dual SIM (Nano-SIM, dual stand-by)"
+            }
+          ]
+        },
+        {
+          "category": "Display",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "IPS LCD"
+            },
+            {
+              "name": "Size",
+              "value": "6.5 inches, 102.0 cm2 (~82.1% screen-to-body ratio)"
+            },
+            {
+              "name": "Resolution",
+              "value": "720 x 1600 pixels, 20:9 ratio (~270 ppi density)"
+            }
+          ]
+        },
+        {
+          "category": "Platform",
+          "specifications": [
+            {
+              "name": "OS",
+              "value": "Android 11 (Go edition)"
+            },
+            {
+              "name": "Chipset",
+              "value": "Mediatek MT6761 Helio A22 (12 nm)"
+            },
+            {
+              "name": "CPU",
+              "value": "Quad-core 2.0 GHz Cortex-A53"
+            },
+            {
+              "name": "GPU",
+              "value": "PowerVR GE8300"
+            }
+          ]
+        },
+        {
+          "category": "Memory",
+          "specifications": [
+            {
+              "name": "Card slot",
+              "value": "microSDXC"
+            },
+            {
+              "name": "Internal",
+              "value": "64GB 2GB RAM"
+            }
+          ]
+        },
+        {
+          "category": "Main Camera",
+          "specifications": [
+            {
+              "name": "Single",
+              "value": "13 MP, AF"
+            },
+            {
+              "name": "Features",
+              "value": "LED flash, panorama"
+            },
+            {
+              "name": "Video",
+              "value": "1080p@30fps"
+            }
+          ]
+        },
+        {
+          "category": "Selfie camera",
+          "specifications": [
+            {
+              "name": "Single",
+              "value": "5 MP"
+            },
+            {
+              "name": "Video",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "category": "Sound",
+          "specifications": [
+            {
+              "name": "Loudspeaker ",
+              "value": "Yes"
+            },
+            {
+              "name": "3.5mm jack ",
+              "value": "Yes"
+            }
+          ]
+        },
+        {
+          "category": "Comms",
+          "specifications": [
+            {
+              "name": "WLAN",
+              "value": "Wi-Fi 802.11 b/g/n"
+            },
+            {
+              "name": "Bluetooth",
+              "value": "5.0, A2DP, LE"
+            },
+            {
+              "name": "Positioning",
+              "value": "GPS, GLONASS, GALILEO, BDS"
+            },
+            {
+              "name": "NFC",
+              "value": "No"
+            },
+            {
+              "name": "Radio",
+              "value": "FM radio"
+            },
+            {
+              "name": "USB",
+              "value": "Yes"
+            }
+          ]
+        },
+        {
+          "category": "Features",
+          "specifications": [
+            {
+              "name": "Sensors",
+              "value": "Accelerometer, proximity"
+            }
+          ]
+        },
+        {
+          "category": "Battery",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "Li-Ion 5000 mAh, non-removable"
+            }
+          ]
+        },
+        {
+          "category": "Misc",
+          "specifications": [
+            {
+              "name": "Colors",
+              "value": "Black, Green"
+            },
+            {
+              "name": "Models",
+              "value": "W-V673-01, W-V673-02"
+            }
+          ]
+        }
+      ],
+      "quickSpec": [
+        {
+          "name": "Display size",
+          "value": "6.5\""
+        },
+        {
+          "name": "Display resolution",
+          "value": "720x1600 pixels"
+        },
+        {
+          "name": "Camera pixels",
+          "value": "13MP\n      "
+        },
+        {
+          "name": "Video pixels",
+          "value": "1080p"
+        },
+        {
+          "name": "RAM size",
+          "value": "2GB RAM"
+        },
+        {
+          "name": "Chipset",
+          "value": "Helio A22"
+        },
+        {
+          "name": "Battery size",
+          "value": "5000mAh"
+        },
+        {
+          "name": "Battery type",
+          "value": "Li-Ion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "vodafone_tab_prime_7-8382",
+    "name": "Tab Prime 7",
+    "details": {
+      "name": "Vodafone Tab Prime 7",
+      "img": "https://fdn2.gsmarena.com/vv/bigpic/vodafone-tab-prime-7.jpg",
+      "detailSpec": [
+        {
+          "category": "Network",
+          "specifications": [
+            {
+              "name": "Technology",
+              "value": "GSM / HSPA / LTE"
+            },
+            {
+              "name": "2G bands",
+              "value": "GSM 850 / 900 / 1800 / 1900 "
+            },
+            {
+              "name": "3G bands",
+              "value": " HSDPA"
+            },
+            {
+              "name": "4G bands",
+              "value": " LTE (unspecified)"
+            },
+            {
+              "name": "Speed",
+              "value": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+            },
+            {
+              "name": "GPRS",
+              "value": "Yes"
+            },
+            {
+              "name": "EDGE",
+              "value": "Yes"
+            }
+          ]
+        },
+        {
+          "category": "Launch",
+          "specifications": [
+            {
+              "name": "Announced",
+              "value": "2016, August. Released 2016, August"
+            },
+            {
+              "name": "Status",
+              "value": "Discontinued"
+            }
+          ]
+        },
+        {
+          "category": "Body",
+          "specifications": [
+            {
+              "name": "Dimensions",
+              "value": "259.2 x 155.8 x 8 mm (10.20 x 6.13 x 0.31 in)"
+            },
+            {
+              "name": "Weight",
+              "value": "439 g (15.49 oz)"
+            },
+            {
+              "name": "SIM",
+              "value": "Micro-SIM"
+            }
+          ]
+        },
+        {
+          "category": "Display",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "IPS LCD"
+            },
+            {
+              "name": "Size",
+              "value": "10.1 inches, 295.8 cm2 (~73.2% screen-to-body ratio)"
+            },
+            {
+              "name": "Resolution",
+              "value": "1200 x 1920 pixels, 16:10 ratio (~224 ppi density)"
+            }
+          ]
+        },
+        {
+          "category": "Platform",
+          "specifications": [
+            {
+              "name": "OS",
+              "value": "Android 6.0 (Marshmallow)"
+            },
+            {
+              "name": "Chipset",
+              "value": "Qualcomm MSM8937 Snapdragon 430 (28 nm)"
+            },
+            {
+              "name": "CPU",
+              "value": "Octa-core 1.4 GHz Cortex-A53"
+            },
+            {
+              "name": "GPU",
+              "value": "Adreno 505"
+            }
+          ]
+        },
+        {
+          "category": "Memory",
+          "specifications": [
+            {
+              "name": "Card slot",
+              "value": "microSDXC (dedicated slot)"
+            },
+            {
+              "name": "Internal",
+              "value": "16GB 2GB RAM"
+            },
+            {
+              "name": " ",
+              "value": "eMMC 5.1"
+            }
+          ]
+        },
+        {
+          "category": "Main Camera",
+          "specifications": [
+            {
+              "name": "Single",
+              "value": "5 MP"
+            },
+            {
+              "name": "Video",
+              "value": "Yes"
+            }
+          ]
+        },
+        {
+          "category": "Selfie camera",
+          "specifications": [
+            {
+              "name": "Single",
+              "value": "2 MP"
+            },
+            {
+              "name": "Video",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "category": "Sound",
+          "specifications": [
+            {
+              "name": "Loudspeaker ",
+              "value": "Yes"
+            },
+            {
+              "name": "3.5mm jack ",
+              "value": "Yes"
+            }
+          ]
+        },
+        {
+          "category": "Comms",
+          "specifications": [
+            {
+              "name": "WLAN",
+              "value": "Wi-Fi 802.11 b/g/n"
+            },
+            {
+              "name": "Bluetooth",
+              "value": "4.2, A2DP, LE"
+            },
+            {
+              "name": "Positioning",
+              "value": "GPS"
+            },
+            {
+              "name": "NFC",
+              "value": "No"
+            },
+            {
+              "name": "Infrared port",
+              "value": "Yes"
+            },
+            {
+              "name": "Radio",
+              "value": "No"
+            },
+            {
+              "name": "USB",
+              "value": "microUSB 2.0"
+            }
+          ]
+        },
+        {
+          "category": "Features",
+          "specifications": [
+            {
+              "name": "Sensors",
+              "value": "Accelerometer"
+            }
+          ]
+        },
+        {
+          "category": "Battery",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "Li-Po 5830 mAh, non-removable"
+            }
+          ]
+        },
+        {
+          "category": "Misc",
+          "specifications": [
+            {
+              "name": "Colors",
+              "value": "Silver"
+            },
+            {
+              "name": "SAR EU",
+              "value": "1.44 W/kg (head)     "
+            },
+            {
+              "name": "Price",
+              "value": "About 190 EUR"
+            }
+          ]
+        }
+      ],
+      "quickSpec": [
+        {
+          "name": "Display size",
+          "value": "10.1\""
+        },
+        {
+          "name": "Display resolution",
+          "value": "1200x1920 pixels"
+        },
+        {
+          "name": "Camera pixels",
+          "value": "5MP\n      "
+        },
+        {
+          "name": "Video pixels",
+          "value": "Video recorder"
+        },
+        {
+          "name": "RAM size",
+          "value": "2GB RAM"
+        },
+        {
+          "name": "Chipset",
+          "value": "Snapdragon 430"
+        },
+        {
+          "name": "Battery size",
+          "value": "5830mAh"
+        },
+        {
+          "name": "Battery type",
+          "value": "Li-Po"
+        }
+      ]
+    }
+  },
+  {
+    "id": "parla_sonic_3_5s-7423",
+    "name": "Sonic 3.5S",
+    "details": {
+      "name": "Parla Sonic 3.5S",
+      "img": "https://fdn2.gsmarena.com/vv/bigpic/parla-sonic-35s.jpg",
+      "detailSpec": [
+        {
+          "category": "Network",
+          "specifications": [
+            {
+              "name": "Technology",
+              "value": "GSM / HSPA"
+            },
+            {
+              "name": "2G bands",
+              "value": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2"
+            },
+            {
+              "name": "3G bands",
+              "value": "HSDPA 850 / 1900 - SM35SH079"
+            },
+            {
+              "name": " ",
+              "value": "HSDPA 900 / 2100 - SM35SH083"
+            },
+            {
+              "name": "Speed",
+              "value": "HSPA 21.1/5.76 Mbps"
+            }
+          ]
+        },
+        {
+          "category": "Launch",
+          "specifications": [
+            {
+              "name": "Announced",
+              "value": "2015, June. Released 2015, July"
+            },
+            {
+              "name": "Status",
+              "value": "Discontinued"
+            }
+          ]
+        },
+        {
+          "category": "Body",
+          "specifications": [
+            {
+              "name": "Dimensions",
+              "value": "117.8 x 63 x 11.7 mm (4.64 x 2.48 x 0.46 in)"
+            },
+            {
+              "name": "Weight",
+              "value": "98 g (3.46 oz)"
+            },
+            {
+              "name": "SIM",
+              "value": "Dual SIM (Mini-SIM/ Micro-SIM)"
+            }
+          ]
+        },
+        {
+          "category": "Display",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "TFT, 256K colors"
+            },
+            {
+              "name": "Size",
+              "value": "3.5 inches, 36.5 cm2 (~49.2% screen-to-body ratio)"
+            },
+            {
+              "name": "Resolution",
+              "value": "320 x 480 pixels, 3:2 ratio (~165 ppi density)"
+            }
+          ]
+        },
+        {
+          "category": "Platform",
+          "specifications": [
+            {
+              "name": "OS",
+              "value": "Android 4.4 (KitKat)"
+            },
+            {
+              "name": "Chipset",
+              "value": "Spreadtrum 7715"
+            },
+            {
+              "name": "CPU",
+              "value": "1.0 GHz Cortex-A7"
+            },
+            {
+              "name": "GPU",
+              "value": "Mali-400"
+            }
+          ]
+        },
+        {
+          "category": "Memory",
+          "specifications": [
+            {
+              "name": "Card slot",
+              "value": "microSDHC"
+            },
+            {
+              "name": "Internal",
+              "value": "512MB 256MB RAM"
+            }
+          ]
+        },
+        {
+          "category": "Main Camera",
+          "specifications": [
+            {
+              "name": "Single",
+              "value": "2 MP, AF"
+            },
+            {
+              "name": "Features",
+              "value": "LED flash, HDR"
+            },
+            {
+              "name": "Video",
+              "value": "480p@30fps"
+            }
+          ]
+        },
+        {
+          "category": "Selfie camera",
+          "specifications": [
+            {
+              "name": " ",
+              "value": "No"
+            }
+          ]
+        },
+        {
+          "category": "Sound",
+          "specifications": [
+            {
+              "name": "Loudspeaker ",
+              "value": "Yes"
+            },
+            {
+              "name": "3.5mm jack ",
+              "value": "Yes"
+            }
+          ]
+        },
+        {
+          "category": "Comms",
+          "specifications": [
+            {
+              "name": "WLAN",
+              "value": "Wi-Fi 802.11 a/b/g/n, hotspot"
+            },
+            {
+              "name": "Bluetooth",
+              "value": "2.1, EDR"
+            },
+            {
+              "name": "Positioning",
+              "value": "A-GPS only"
+            },
+            {
+              "name": "NFC",
+              "value": "No"
+            },
+            {
+              "name": "Radio",
+              "value": "Stereo FM radio"
+            },
+            {
+              "name": "USB",
+              "value": "microUSB 2.0"
+            }
+          ]
+        },
+        {
+          "category": "Features",
+          "specifications": [
+            {
+              "name": "Sensors",
+              "value": "Accelerometer"
+            }
+          ]
+        },
+        {
+          "category": "Battery",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "Li-Ion 1300 mAh, removable"
+            },
+            {
+              "name": "Stand-by",
+              "value": "Up to 171 h (3G)"
+            },
+            {
+              "name": "Talk time",
+              "value": "Up to 3 h 30 min (3G)"
+            }
+          ]
+        },
+        {
+          "category": "Misc",
+          "specifications": [
+            {
+              "name": "Colors",
+              "value": "Black, White"
+            }
+          ]
+        }
+      ],
+      "quickSpec": [
+        {
+          "name": "Display size",
+          "value": "3.5\""
+        },
+        {
+          "name": "Display resolution",
+          "value": "320x480 pixels"
+        },
+        {
+          "name": "Camera pixels",
+          "value": "2MP\n      "
+        },
+        {
+          "name": "Video pixels",
+          "value": "480p"
+        },
+        {
+          "name": "RAM size",
+          "value": "256MB RAM"
+        },
+        {
+          "name": "Chipset",
+          "value": "Spreadtrum 7715"
+        },
+        {
+          "name": "Battery size",
+          "value": "1300mAh"
+        },
+        {
+          "name": "Battery type",
+          "value": "Li-Ion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "innostream_inno_30-786",
+    "name": "INNO 30",
+    "details": {
+      "name": "Innostream INNO 30",
+      "img": "https://fdn2.gsmarena.com/vv/bigpic/ininno30.gif",
+      "detailSpec": [
+        {
+          "category": "Network",
+          "specifications": [
+            {
+              "name": "Technology",
+              "value": "GSM"
+            },
+            {
+              "name": "2G bands",
+              "value": "GSM 900 / 1800 / 1900 "
+            },
+            {
+              "name": "GPRS",
+              "value": "Yes"
+            },
+            {
+              "name": "EDGE",
+              "value": "No"
+            }
+          ]
+        },
+        {
+          "category": "Launch",
+          "specifications": [
+            {
+              "name": "Announced",
+              "value": "2004, Q1"
+            },
+            {
+              "name": "Status",
+              "value": "Discontinued"
+            }
+          ]
+        },
+        {
+          "category": "Body",
+          "specifications": [
+            {
+              "name": "Dimensions",
+              "value": "82 x 42 x 21 mm (3.23 x 1.65 x 0.83 in)"
+            },
+            {
+              "name": "Weight",
+              "value": "76 g (2.68 oz)"
+            },
+            {
+              "name": "SIM",
+              "value": "Mini-SIM"
+            }
+          ]
+        },
+        {
+          "category": "Display",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "TFT, 256K colors"
+            },
+            {
+              "name": "Size",
+              "value": ""
+            },
+            {
+              "name": "Resolution",
+              "value": "128 x 160 pixels, 11 lines"
+            },
+            {
+              "name": " ",
+              "value": "Second external CSTN display (96 x 64 pixels), 65K colors\nScreensavers and wallpapers\nDownloadable images"
+            }
+          ]
+        },
+        {
+          "category": "Memory",
+          "specifications": [
+            {
+              "name": "Card slot",
+              "value": "No"
+            },
+            {
+              "name": "Phonebook",
+              "value": "800"
+            },
+            {
+              "name": "Call records",
+              "value": "20 received, dialed and missed calls"
+            }
+          ]
+        },
+        {
+          "category": "Main Camera",
+          "specifications": [
+            {
+              "name": "Single",
+              "value": "VGA"
+            },
+            {
+              "name": "Video",
+              "value": "Yes"
+            }
+          ]
+        },
+        {
+          "category": "Selfie camera",
+          "specifications": [
+            {
+              "name": " ",
+              "value": "No"
+            }
+          ]
+        },
+        {
+          "category": "Sound",
+          "specifications": [
+            {
+              "name": "Loudspeaker ",
+              "value": "No"
+            },
+            {
+              "name": "Alert types",
+              "value": "Vibration; Downloadable polyphonic, MP3 ringtones, composer"
+            },
+            {
+              "name": "3.5mm jack ",
+              "value": "No"
+            }
+          ]
+        },
+        {
+          "category": "Comms",
+          "specifications": [
+            {
+              "name": "WLAN",
+              "value": "No"
+            },
+            {
+              "name": "Bluetooth",
+              "value": "No"
+            },
+            {
+              "name": "Positioning",
+              "value": "No"
+            },
+            {
+              "name": "Radio",
+              "value": "No"
+            },
+            {
+              "name": "USB",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "category": "Features",
+          "specifications": [
+            {
+              "name": "Sensors",
+              "value": ""
+            },
+            {
+              "name": "Messaging",
+              "value": "SMS, MMS, Email"
+            },
+            {
+              "name": "Browser",
+              "value": "WAP"
+            },
+            {
+              "name": "Games",
+              "value": "Yes"
+            },
+            {
+              "name": "Java",
+              "value": "Yes"
+            },
+            {
+              "name": " ",
+              "value": "Predictive text input (iTAP)\nCalculator\nStopwatch\nVoice memo"
+            }
+          ]
+        },
+        {
+          "category": "Battery",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "Removable Li-Ion 650 mAh battery"
+            },
+            {
+              "name": "Stand-by",
+              "value": "Up to 150 h"
+            },
+            {
+              "name": "Talk time",
+              "value": "Up to 3 h - 5 h"
+            },
+            {
+              "name": "Type",
+              "value": "Standard battery, Li-Ion 830 mAh"
+            },
+            {
+              "name": "Stand-by",
+              "value": "Up to 200 h"
+            },
+            {
+              "name": "Talk time",
+              "value": "Up to 3 h - 6 h"
+            }
+          ]
+        },
+        {
+          "category": "Misc",
+          "specifications": [
+            {
+              "name": "Colors",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "quickSpec": [
+        {
+          "name": "Display size",
+          "value": " "
+        },
+        {
+          "name": "Display resolution",
+          "value": "128x160 pixels, 11 lines"
+        },
+        {
+          "name": "Camera pixels",
+          "value": "0.3MP\n      "
+        },
+        {
+          "name": "Video pixels",
+          "value": "Video recorder"
+        },
+        {
+          "name": "RAM size",
+          "value": " "
+        },
+        {
+          "name": "Chipset",
+          "value": ""
+        },
+        {
+          "name": "Battery size",
+          "value": "650mAh"
+        },
+        {
+          "name": "Battery type",
+          "value": "Li-Ion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mitac_mio_leap_k1-3207",
+    "name": "MIO Leap K1",
+    "details": {
+      "name": "Mitac MIO Leap K1",
+      "img": "https://fdn2.gsmarena.com/vv/bigpic/mitac-mio-leap-k1.jpg",
+      "detailSpec": [
+        {
+          "category": "Network",
+          "specifications": [
+            {
+              "name": "Technology",
+              "value": "GSM"
+            },
+            {
+              "name": "2G bands",
+              "value": "GSM 900 / 1800 / 1900 "
+            },
+            {
+              "name": "GPRS",
+              "value": "Class 10"
+            },
+            {
+              "name": "EDGE",
+              "value": "Class 10"
+            }
+          ]
+        },
+        {
+          "category": "Launch",
+          "specifications": [
+            {
+              "name": "Announced",
+              "value": "2008, June. Released 2009, October"
+            },
+            {
+              "name": "Status",
+              "value": "Discontinued"
+            }
+          ]
+        },
+        {
+          "category": "Body",
+          "specifications": [
+            {
+              "name": "Dimensions",
+              "value": "105.1 x 53.5 x 14.5 mm (4.14 x 2.11 x 0.57 in)"
+            },
+            {
+              "name": "Weight",
+              "value": "125 g (4.41 oz)"
+            },
+            {
+              "name": "SIM",
+              "value": "Mini-SIM"
+            }
+          ]
+        },
+        {
+          "category": "Display",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "TFT resistive touchscreen, 65K colors"
+            },
+            {
+              "name": "Size",
+              "value": "2.6 inches, 20.9 cm2 (~37.2% screen-to-body ratio)"
+            },
+            {
+              "name": "Resolution",
+              "value": "240 x 320 pixels, 4:3 ratio (~154 ppi density)"
+            },
+            {
+              "name": " ",
+              "value": "Secondary OLED 65K display, 1.7\" inches"
+            }
+          ]
+        },
+        {
+          "category": "Platform",
+          "specifications": [
+            {
+              "name": "OS",
+              "value": "Windows Mobile 6.1 Professional"
+            },
+            {
+              "name": "CPU",
+              "value": "Samsung S3C 2443, 400MHz"
+            }
+          ]
+        },
+        {
+          "category": "Memory",
+          "specifications": [
+            {
+              "name": "Card slot",
+              "value": "microSDHC (dedicated slot)"
+            },
+            {
+              "name": "Internal",
+              "value": "64MB RAM, 1GB"
+            }
+          ]
+        },
+        {
+          "category": "Main Camera",
+          "specifications": [
+            {
+              "name": "Single",
+              "value": "2 MP, AF"
+            },
+            {
+              "name": "Features",
+              "value": "LED flash"
+            },
+            {
+              "name": "Video",
+              "value": "Yes"
+            }
+          ]
+        },
+        {
+          "category": "Selfie camera",
+          "specifications": [
+            {
+              "name": " ",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "category": "Sound",
+          "specifications": [
+            {
+              "name": "Loudspeaker ",
+              "value": "Yes"
+            },
+            {
+              "name": "3.5mm jack ",
+              "value": "No"
+            }
+          ]
+        },
+        {
+          "category": "Comms",
+          "specifications": [
+            {
+              "name": "WLAN",
+              "value": "No"
+            },
+            {
+              "name": "Bluetooth",
+              "value": "2.0, A2DP"
+            },
+            {
+              "name": "Positioning",
+              "value": "GPS, A-GPS, SiRF Star III chipset, MioMap navigation"
+            },
+            {
+              "name": "Radio",
+              "value": "No"
+            },
+            {
+              "name": "USB",
+              "value": "miniUSB 1.1"
+            }
+          ]
+        },
+        {
+          "category": "Features",
+          "specifications": [
+            {
+              "name": "Sensors",
+              "value": ""
+            },
+            {
+              "name": "Browser",
+              "value": "WAP 2.0/xHTML, HTML"
+            },
+            {
+              "name": " ",
+              "value": "Dual-face phone\nMP3/WMA/WAV/eAAC player\nMP4/H.263 player\nPocket Office \nOrganizer\nVoice memo\nPredictive text input"
+            }
+          ]
+        },
+        {
+          "category": "Battery",
+          "specifications": [
+            {
+              "name": "Type",
+              "value": "Removable Li-Ion 790 mAh battery"
+            },
+            {
+              "name": "Talk time",
+              "value": "Up to 5 h"
+            }
+          ]
+        },
+        {
+          "category": "Misc",
+          "specifications": [
+            {
+              "name": "Colors",
+              "value": "Black"
+            }
+          ]
+        }
+      ],
+      "quickSpec": [
+        {
+          "name": "Display size",
+          "value": "2.6\""
+        },
+        {
+          "name": "Display resolution",
+          "value": "240x320 pixels"
+        },
+        {
+          "name": "Camera pixels",
+          "value": "2MP\n      "
+        },
+        {
+          "name": "Video pixels",
+          "value": "Video recorder"
+        },
+        {
+          "name": "RAM size",
+          "value": "64MB RAM"
+        },
+        {
+          "name": "Chipset",
+          "value": ""
+        },
+        {
+          "name": "Battery size",
+          "value": "790mAh"
+        },
+        {
+          "name": "Battery type",
+          "value": "Li-Ion"
+        }
+      ]
+    }
+  }
+]

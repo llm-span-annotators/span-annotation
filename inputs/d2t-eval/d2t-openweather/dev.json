@@ -1,0 +1,3586 @@
+{
+  "forecasts": [
+    {
+      "city": {
+        "name": "Borsec",
+        "country": "Romania"
+      },
+      "list": [
+        {
+          "clouds": {
+            "all": 99
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 00:00:00",
+          "main": {
+            "feels_like": -0.65,
+            "pressure": 1022,
+            "temp": -0.65
+          },
+          "weather": [
+            {
+              "description": "light snow",
+              "icon": "13n",
+              "id": 600,
+              "main": "Snow"
+            }
+          ],
+          "wind": {
+            "deg": 276,
+            "gust": 0,
+            "speed": 1.04
+          }
+        },
+        {
+          "clouds": {
+            "all": 98
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 06:00:00",
+          "main": {
+            "feels_like": -4.63,
+            "pressure": 1023,
+            "temp": -2.33
+          },
+          "weather": [
+            {
+              "description": "light snow",
+              "icon": "13d",
+              "id": 600,
+              "main": "Snow"
+            }
+          ],
+          "wind": {
+            "deg": 21,
+            "gust": 0,
+            "speed": 1.63
+          }
+        },
+        {
+          "clouds": {
+            "all": 64
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 12:00:00",
+          "main": {
+            "feels_like": -6.1,
+            "pressure": 1025,
+            "temp": -2.25
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04d",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 340,
+            "gust": 0,
+            "speed": 2.89
+          }
+        },
+        {
+          "clouds": {
+            "all": 6
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 18:00:00",
+          "main": {
+            "feels_like": -6.92,
+            "pressure": 1028,
+            "temp": -4.14
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 328,
+            "gust": 0,
+            "speed": 1.76
+          }
+        },
+        {
+          "clouds": {
+            "all": 43
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 00:00:00",
+          "main": {
+            "feels_like": -14.06,
+            "pressure": 1030,
+            "temp": -10.55
+          },
+          "weather": [
+            {
+              "description": "scattered clouds",
+              "icon": "03n",
+              "id": 802,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 295,
+            "gust": 0,
+            "speed": 1.63
+          }
+        },
+        {
+          "clouds": {
+            "all": 34
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 06:00:00",
+          "main": {
+            "feels_like": -8.79,
+            "pressure": 1032,
+            "temp": -8.79
+          },
+          "weather": [
+            {
+              "description": "scattered clouds",
+              "icon": "03d",
+              "id": 802,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 274,
+            "gust": 0,
+            "speed": 1.03
+          }
+        },
+        {
+          "clouds": {
+            "all": 57
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 12:00:00",
+          "main": {
+            "feels_like": -6.31,
+            "pressure": 1031,
+            "temp": -3.41
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04d",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 280,
+            "gust": 0,
+            "speed": 1.92
+          }
+        },
+        {
+          "clouds": {
+            "all": 34
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 18:00:00",
+          "main": {
+            "feels_like": -6.62,
+            "pressure": 1032,
+            "temp": -4.01
+          },
+          "weather": [
+            {
+              "description": "scattered clouds",
+              "icon": "03n",
+              "id": 802,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 353,
+            "gust": 0,
+            "speed": 1.67
+          }
+        },
+        {
+          "clouds": {
+            "all": 98
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 00:00:00",
+          "main": {
+            "feels_like": -11.07,
+            "pressure": 1033,
+            "temp": -7.77
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 280,
+            "gust": 0,
+            "speed": 1.74
+          }
+        },
+        {
+          "clouds": {
+            "all": 95
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 06:00:00",
+          "main": {
+            "feels_like": -6.58,
+            "pressure": 1033,
+            "temp": -6.58
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 276,
+            "gust": 1.32,
+            "speed": 1.04
+          }
+        },
+        {
+          "clouds": {
+            "all": 99
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 12:00:00",
+          "main": {
+            "feels_like": -5.83,
+            "pressure": 1030,
+            "temp": -2.23
+          },
+          "weather": [
+            {
+              "description": "light snow",
+              "icon": "13d",
+              "id": 600,
+              "main": "Snow"
+            }
+          ],
+          "wind": {
+            "deg": 281,
+            "gust": 4.12,
+            "speed": 2.65
+          }
+        },
+        {
+          "clouds": {
+            "all": 94
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 18:00:00",
+          "main": {
+            "feels_like": -4.97,
+            "pressure": 1033,
+            "temp": -4.97
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 311,
+            "gust": 1.42,
+            "speed": 1.3
+          }
+        },
+        {
+          "clouds": {
+            "all": 95
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 00:00:00",
+          "main": {
+            "feels_like": -7.02,
+            "pressure": 1035,
+            "temp": -7.02
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 285,
+            "gust": 1.24,
+            "speed": 1.19
+          }
+        },
+        {
+          "clouds": {
+            "all": 65
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 06:00:00",
+          "main": {
+            "feels_like": -7.06,
+            "pressure": 1036,
+            "temp": -7.06
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04d",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 31,
+            "gust": 1.14,
+            "speed": 1.16
+          }
+        },
+        {
+          "clouds": {
+            "all": 5
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 12:00:00",
+          "main": {
+            "feels_like": -4.63,
+            "pressure": 1035,
+            "temp": -1.91
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 27,
+            "gust": 3.23,
+            "speed": 1.96
+          }
+        },
+        {
+          "clouds": {
+            "all": 5
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 18:00:00",
+          "main": {
+            "feels_like": -11.57,
+            "pressure": 1039,
+            "temp": -7.95
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 66,
+            "gust": 1.8,
+            "speed": 1.91
+          }
+        },
+        {
+          "clouds": {
+            "all": 21
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 00:00:00",
+          "main": {
+            "feels_like": -14.66,
+            "pressure": 1042,
+            "temp": -10.54
+          },
+          "weather": [
+            {
+              "description": "few clouds",
+              "icon": "02n",
+              "id": 801,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 56,
+            "gust": 2.63,
+            "speed": 1.96
+          }
+        },
+        {
+          "clouds": {
+            "all": 18
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 06:00:00",
+          "main": {
+            "feels_like": -16.06,
+            "pressure": 1043,
+            "temp": -11.21
+          },
+          "weather": [
+            {
+              "description": "few clouds",
+              "icon": "02d",
+              "id": 801,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 56,
+            "gust": 3.3,
+            "speed": 2.34
+          }
+        },
+        {
+          "clouds": {
+            "all": 6
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 12:00:00",
+          "main": {
+            "feels_like": -6.38,
+            "pressure": 1039,
+            "temp": -3
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 77,
+            "gust": 3.06,
+            "speed": 2.33
+          }
+        },
+        {
+          "clouds": {
+            "all": 79
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 18:00:00",
+          "main": {
+            "feels_like": -13.24,
+            "pressure": 1042,
+            "temp": -8.65
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04n",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 65,
+            "gust": 3.36,
+            "speed": 2.48
+          }
+        }
+      ]
+    },
+    {
+      "city": {
+        "name": "Aşağı Beğdeş",
+        "country": "Turkey"
+      },
+      "list": [
+        {
+          "clouds": {
+            "all": 97
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 00:00:00",
+          "main": {
+            "feels_like": 4.84,
+            "pressure": 1021,
+            "temp": 5.64
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 358,
+            "gust": 0,
+            "speed": 1.38
+          }
+        },
+        {
+          "clouds": {
+            "all": 3
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 06:00:00",
+          "main": {
+            "feels_like": 6.11,
+            "pressure": 1021,
+            "temp": 6.11
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 98,
+            "gust": 0,
+            "speed": 0.61
+          }
+        },
+        {
+          "clouds": {
+            "all": 17
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 12:00:00",
+          "main": {
+            "feels_like": 16.47,
+            "pressure": 1016,
+            "temp": 17.94
+          },
+          "weather": [
+            {
+              "description": "few clouds",
+              "icon": "02d",
+              "id": 801,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 188,
+            "gust": 0,
+            "speed": 2.5
+          }
+        },
+        {
+          "clouds": {
+            "all": 7
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 18:00:00",
+          "main": {
+            "feels_like": 8.26,
+            "pressure": 1016,
+            "temp": 9.49
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 196,
+            "gust": 0,
+            "speed": 2.44
+          }
+        },
+        {
+          "clouds": {
+            "all": 13
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 00:00:00",
+          "main": {
+            "feels_like": 3.9,
+            "pressure": 1017,
+            "temp": 5.33
+          },
+          "weather": [
+            {
+              "description": "few clouds",
+              "icon": "02n",
+              "id": 801,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 72,
+            "gust": 0,
+            "speed": 1.86
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 06:00:00",
+          "main": {
+            "feels_like": 5.37,
+            "pressure": 1019,
+            "temp": 6.67
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 61,
+            "gust": 0,
+            "speed": 1.94
+          }
+        },
+        {
+          "clouds": {
+            "all": 27
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 12:00:00",
+          "main": {
+            "feels_like": 15.18,
+            "pressure": 1016,
+            "temp": 16.7
+          },
+          "weather": [
+            {
+              "description": "scattered clouds",
+              "icon": "03d",
+              "id": 802,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 147,
+            "gust": 0,
+            "speed": 1.73
+          }
+        },
+        {
+          "clouds": {
+            "all": 12
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 18:00:00",
+          "main": {
+            "feels_like": 8.17,
+            "pressure": 1015,
+            "temp": 10.16
+          },
+          "weather": [
+            {
+              "description": "few clouds",
+              "icon": "02n",
+              "id": 801,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 122,
+            "gust": 0,
+            "speed": 0.94
+          }
+        },
+        {
+          "clouds": {
+            "all": 4
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 00:00:00",
+          "main": {
+            "feels_like": 3.66,
+            "pressure": 1014,
+            "temp": 5.24
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 55,
+            "gust": 0,
+            "speed": 1.99
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 06:00:00",
+          "main": {
+            "feels_like": 5.99,
+            "pressure": 1013,
+            "temp": 8.34
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 74,
+            "gust": 6.52,
+            "speed": 3.94
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 12:00:00",
+          "main": {
+            "feels_like": 12.76,
+            "pressure": 1006,
+            "temp": 14.57
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 126,
+            "gust": 3.72,
+            "speed": 3.14
+          }
+        },
+        {
+          "clouds": {
+            "all": 39
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 18:00:00",
+          "main": {
+            "feels_like": 7.8,
+            "pressure": 1005,
+            "temp": 9.14
+          },
+          "weather": [
+            {
+              "description": "scattered clouds",
+              "icon": "03n",
+              "id": 802,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 226,
+            "gust": 3.42,
+            "speed": 2.51
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 00:00:00",
+          "main": {
+            "feels_like": 6.1,
+            "pressure": 1002,
+            "temp": 7.25
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 81,
+            "gust": 1.94,
+            "speed": 1.88
+          },
+          "rain": 1.81
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 06:00:00",
+          "main": {
+            "feels_like": 5.23,
+            "pressure": 1001,
+            "temp": 7.6
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 179,
+            "gust": 5.44,
+            "speed": 3.67
+          },
+          "rain": 2.38
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 12:00:00",
+          "main": {
+            "feels_like": 4.8,
+            "pressure": 1003,
+            "temp": 7.97
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 45,
+            "gust": 6.03,
+            "speed": 5.64
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 18:00:00",
+          "main": {
+            "feels_like": 3.78,
+            "pressure": 1010,
+            "temp": 7.17
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 352,
+            "gust": 7.6,
+            "speed": 5.65
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 00:00:00",
+          "main": {
+            "feels_like": 2.31,
+            "pressure": 1013,
+            "temp": 5.8
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 308,
+            "gust": 6.83,
+            "speed": 5.06
+          }
+        },
+        {
+          "clouds": {
+            "all": 98
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 06:00:00",
+          "main": {
+            "feels_like": 4.14,
+            "pressure": 1017,
+            "temp": 6.25
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 359,
+            "gust": 4.2,
+            "speed": 2.81
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 12:00:00",
+          "main": {
+            "feels_like": 4.5,
+            "pressure": 1017,
+            "temp": 6.95
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 4,
+            "gust": 2.06,
+            "speed": 3.56
+          }
+        },
+        {
+          "clouds": {
+            "all": 44
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 18:00:00",
+          "main": {
+            "feels_like": 0.98,
+            "pressure": 1018,
+            "temp": 4.21
+          },
+          "weather": [
+            {
+              "description": "scattered clouds",
+              "icon": "03n",
+              "id": 802,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 1,
+            "gust": 4.56,
+            "speed": 3.85
+          }
+        }
+      ]
+    },
+    {
+      "city": {
+        "name": "Bagakay",
+        "country": "Philippines"
+      },
+      "list": [
+        {
+          "clouds": {
+            "all": 86
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 00:00:00",
+          "main": {
+            "feels_like": 30.74,
+            "pressure": 1011,
+            "temp": 27.04
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 22,
+            "gust": 0,
+            "speed": 2.22
+          },
+          "rain": 1.46
+        },
+        {
+          "clouds": {
+            "all": 33
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 06:00:00",
+          "main": {
+            "feels_like": 39.7,
+            "pressure": 1008,
+            "temp": 32.7
+          },
+          "weather": [
+            {
+              "description": "scattered clouds",
+              "icon": "03d",
+              "id": 802,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 31,
+            "gust": 0,
+            "speed": 3.58
+          }
+        },
+        {
+          "clouds": {
+            "all": 91
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 12:00:00",
+          "main": {
+            "feels_like": 31.08,
+            "pressure": 1010,
+            "temp": 27.12
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 32,
+            "gust": 0,
+            "speed": 1.62
+          }
+        },
+        {
+          "clouds": {
+            "all": 99
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 18:00:00",
+          "main": {
+            "feels_like": 26.45,
+            "pressure": 1010,
+            "temp": 26.45
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 28,
+            "gust": 0,
+            "speed": 2.25
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 00:00:00",
+          "main": {
+            "feels_like": 30.12,
+            "pressure": 1011,
+            "temp": 26.72
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 26,
+            "gust": 0,
+            "speed": 2.21
+          },
+          "rain": 0.89
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 06:00:00",
+          "main": {
+            "feels_like": 37.47,
+            "pressure": 1009,
+            "temp": 30.47
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 35,
+            "gust": 0,
+            "speed": 2.44
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 12:00:00",
+          "main": {
+            "feels_like": 26.65,
+            "pressure": 1010,
+            "temp": 26.65
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 20,
+            "gust": 0,
+            "speed": 1.74
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 18:00:00",
+          "main": {
+            "feels_like": 26.47,
+            "pressure": 1010,
+            "temp": 26.47
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 41,
+            "gust": 0,
+            "speed": 1.97
+          },
+          "rain": 1.76
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 00:00:00",
+          "main": {
+            "feels_like": 31.13,
+            "pressure": 1011,
+            "temp": 26.99
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 37,
+            "gust": 0,
+            "speed": 1.98
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 06:00:00",
+          "main": {
+            "feels_like": 37.43,
+            "pressure": 1006,
+            "temp": 30.43
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 174,
+            "gust": 1.02,
+            "speed": 0.7
+          },
+          "rain": 3.63
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 12:00:00",
+          "main": {
+            "feels_like": 26.45,
+            "pressure": 1009,
+            "temp": 25.76
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 29,
+            "gust": 1.32,
+            "speed": 0.4
+          }
+        },
+        {
+          "clouds": {
+            "all": 77
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 18:00:00",
+          "main": {
+            "feels_like": 25.92,
+            "pressure": 1007,
+            "temp": 25.27
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04n",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 90,
+            "gust": 1.62,
+            "speed": 1.83
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 00:00:00",
+          "main": {
+            "feels_like": 26.47,
+            "pressure": 1009,
+            "temp": 25.77
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 108,
+            "gust": 1.74,
+            "speed": 2.15
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 06:00:00",
+          "main": {
+            "feels_like": 26.4,
+            "pressure": 1007,
+            "temp": 26.4
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 113,
+            "gust": 4.94,
+            "speed": 5.1
+          },
+          "rain": 1
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 12:00:00",
+          "main": {
+            "feels_like": 26.22,
+            "pressure": 1009,
+            "temp": 25.57
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 73,
+            "gust": 2.33,
+            "speed": 2.35
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 18:00:00",
+          "main": {
+            "feels_like": 25.18,
+            "pressure": 1007,
+            "temp": 24.6
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 72,
+            "gust": 2.1,
+            "speed": 2.3
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 00:00:00",
+          "main": {
+            "feels_like": 26.28,
+            "pressure": 1009,
+            "temp": 26.28
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 106,
+            "gust": 2.33,
+            "speed": 2.54
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 06:00:00",
+          "main": {
+            "feels_like": 34.71,
+            "pressure": 1006,
+            "temp": 29.58
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 300,
+            "gust": 2,
+            "speed": 2.03
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 12:00:00",
+          "main": {
+            "feels_like": 26.1,
+            "pressure": 1008,
+            "temp": 26.1
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 276,
+            "gust": 1.46,
+            "speed": 1.3
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 18:00:00",
+          "main": {
+            "feels_like": 25.6,
+            "pressure": 1007,
+            "temp": 24.96
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 103,
+            "gust": 2.76,
+            "speed": 2.82
+          }
+        }
+      ]
+    },
+    {
+      "city": {
+        "name": "Plouay",
+        "country": "France"
+      },
+      "list": [
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 00:00:00",
+          "main": {
+            "feels_like": 1.8,
+            "pressure": 1026,
+            "temp": 4.12
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 90,
+            "gust": 0,
+            "speed": 2.57
+          }
+        },
+        {
+          "clouds": {
+            "all": 97
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 06:00:00",
+          "main": {
+            "feels_like": 1.66,
+            "pressure": 1027,
+            "temp": 4.03
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 158,
+            "gust": 0,
+            "speed": 2.61
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 12:00:00",
+          "main": {
+            "feels_like": 5.15,
+            "pressure": 1028,
+            "temp": 7.43
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 177,
+            "gust": 0,
+            "speed": 3.45
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 18:00:00",
+          "main": {
+            "feels_like": 4.93,
+            "pressure": 1027,
+            "temp": 7.32
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 130,
+            "gust": 0,
+            "speed": 3.6
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 00:00:00",
+          "main": {
+            "feels_like": 3.82,
+            "pressure": 1027,
+            "temp": 6.85
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 150,
+            "gust": 0,
+            "speed": 4.63
+          }
+        },
+        {
+          "clouds": {
+            "all": 95
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 06:00:00",
+          "main": {
+            "feels_like": 4.44,
+            "pressure": 1025,
+            "temp": 7.4
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 175,
+            "gust": 0,
+            "speed": 4.77
+          }
+        },
+        {
+          "clouds": {
+            "all": 99
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 12:00:00",
+          "main": {
+            "feels_like": 10.31,
+            "pressure": 1026,
+            "temp": 11.13
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 224,
+            "gust": 0,
+            "speed": 7.81
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 18:00:00",
+          "main": {
+            "feels_like": 10,
+            "pressure": 1028,
+            "temp": 10.3
+          },
+          "weather": [
+            {
+              "description": "light intensity drizzle",
+              "icon": "09n",
+              "id": 300,
+              "main": "Drizzle"
+            }
+          ],
+          "wind": {
+            "deg": 220,
+            "gust": 0,
+            "speed": 4.63
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 00:00:00",
+          "main": {
+            "feels_like": 7.14,
+            "pressure": 1033,
+            "temp": 7.14
+          },
+          "weather": [
+            {
+              "description": "fog",
+              "icon": "50n",
+              "id": 741,
+              "main": "Fog"
+            }
+          ],
+          "wind": {
+            "deg": 310,
+            "gust": 0,
+            "speed": 1.03
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 06:00:00",
+          "main": {
+            "feels_like": 4.65,
+            "pressure": 1037,
+            "temp": 4.65
+          },
+          "weather": [
+            {
+              "description": "mist",
+              "icon": "50n",
+              "id": 701,
+              "main": "Mist"
+            }
+          ],
+          "wind": {
+            "deg": 20,
+            "gust": 0,
+            "speed": 1.03
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 12:00:00",
+          "main": {
+            "feels_like": 7.8,
+            "pressure": 1039,
+            "temp": 9.45
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 40,
+            "gust": 0,
+            "speed": 3.09
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 18:00:00",
+          "main": {
+            "feels_like": 5.46,
+            "pressure": 1039,
+            "temp": 7.76
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 30,
+            "gust": 0,
+            "speed": 3.6
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 00:00:00",
+          "main": {
+            "feels_like": 2.56,
+            "pressure": 1039,
+            "temp": 5.38
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 70,
+            "gust": 0,
+            "speed": 3.6
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 06:00:00",
+          "main": {
+            "feels_like": 1.56,
+            "pressure": 1037,
+            "temp": 4.56
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 60,
+            "gust": 0,
+            "speed": 3.6
+          }
+        },
+        {
+          "clouds": {
+            "all": 75
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 12:00:00",
+          "main": {
+            "feels_like": 3.1,
+            "pressure": 1036,
+            "temp": 7.06
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04d",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 60,
+            "gust": 0,
+            "speed": 7.2
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 18:00:00",
+          "main": {
+            "feels_like": 2.44,
+            "pressure": 1031,
+            "temp": 6.42
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 50,
+            "gust": 0,
+            "speed": 6.69
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 00:00:00",
+          "main": {
+            "feels_like": -1.2,
+            "pressure": 1028,
+            "temp": 4
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 60,
+            "gust": 0,
+            "speed": 8.23
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 06:00:00",
+          "main": {
+            "feels_like": -0.11,
+            "pressure": 1021,
+            "temp": 3.9
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 40,
+            "gust": 0,
+            "speed": 5.14
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 12:00:00",
+          "main": {
+            "feels_like": -0.88,
+            "pressure": 1017,
+            "temp": 3.82
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 60,
+            "gust": 0,
+            "speed": 6.69
+          },
+          "rain": 1.38
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 18:00:00",
+          "main": {
+            "feels_like": -0.62,
+            "pressure": 1014,
+            "temp": 2.08
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 330,
+            "gust": 0,
+            "speed": 2.57
+          },
+          "rain": 1.13
+        }
+      ]
+    },
+    {
+      "city": {
+        "name": "Santa Maria",
+        "country": "Philippines"
+      },
+      "list": [
+        {
+          "clouds": {
+            "all": 94
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 00:00:00",
+          "main": {
+            "feels_like": 29.59,
+            "pressure": 1011,
+            "temp": 26.68
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 320,
+            "gust": 0,
+            "speed": 3.13
+          },
+          "rain": 1.04
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 06:00:00",
+          "main": {
+            "feels_like": 36.01,
+            "pressure": 1008,
+            "temp": 29.01
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 24,
+            "gust": 0,
+            "speed": 5.25
+          },
+          "rain": 1.46
+        },
+        {
+          "clouds": {
+            "all": 86
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 12:00:00",
+          "main": {
+            "feels_like": 29.94,
+            "pressure": 1011,
+            "temp": 26.75
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 49,
+            "gust": 0,
+            "speed": 0.41
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 18:00:00",
+          "main": {
+            "feels_like": 26.7,
+            "pressure": 1009,
+            "temp": 25.7
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 339,
+            "gust": 0,
+            "speed": 3.8
+          },
+          "rain": 3.07
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 00:00:00",
+          "main": {
+            "feels_like": 26.17,
+            "pressure": 1011,
+            "temp": 26.17
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 324,
+            "gust": 0,
+            "speed": 3
+          },
+          "rain": 1.27
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 06:00:00",
+          "main": {
+            "feels_like": 36.5,
+            "pressure": 1008,
+            "temp": 29.5
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 321,
+            "gust": 0,
+            "speed": 2.6
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 12:00:00",
+          "main": {
+            "feels_like": 31.11,
+            "pressure": 1010,
+            "temp": 27.39
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 13,
+            "gust": 0,
+            "speed": 3.7
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 18:00:00",
+          "main": {
+            "feels_like": 26.07,
+            "pressure": 1009,
+            "temp": 26.07
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 349,
+            "gust": 0,
+            "speed": 3.64
+          },
+          "rain": 5.2
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 00:00:00",
+          "main": {
+            "feels_like": 26.91,
+            "pressure": 1010,
+            "temp": 25.87
+          },
+          "weather": [
+            {
+              "description": "moderate rain",
+              "icon": "10d",
+              "id": 501,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 353,
+            "gust": 0,
+            "speed": 4.26
+          },
+          "rain": 2.01
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 06:00:00",
+          "main": {
+            "feels_like": 26.23,
+            "pressure": 1008,
+            "temp": 26.23
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 338,
+            "gust": 3.42,
+            "speed": 1.91
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 12:00:00",
+          "main": {
+            "feels_like": 26.03,
+            "pressure": 1011,
+            "temp": 26.03
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 298,
+            "gust": 1.52,
+            "speed": 1.44
+          },
+          "rain": 1.75
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 18:00:00",
+          "main": {
+            "feels_like": 25.92,
+            "pressure": 1008,
+            "temp": 24.97
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 299,
+            "gust": 2.42,
+            "speed": 1.96
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 00:00:00",
+          "main": {
+            "feels_like": 25.45,
+            "pressure": 1011,
+            "temp": 24.47
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 290,
+            "gust": 3.24,
+            "speed": 2.07
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 06:00:00",
+          "main": {
+            "feels_like": 25.58,
+            "pressure": 1008,
+            "temp": 24.56
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 260,
+            "gust": 2.14,
+            "speed": 1.38
+          },
+          "rain": 1.69
+        },
+        {
+          "clouds": {
+            "all": 81
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 12:00:00",
+          "main": {
+            "feels_like": 26.39,
+            "pressure": 1010,
+            "temp": 25.39
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04n",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 282,
+            "gust": 1.43,
+            "speed": 1.57
+          }
+        },
+        {
+          "clouds": {
+            "all": 99
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 18:00:00",
+          "main": {
+            "feels_like": 26.44,
+            "pressure": 1008,
+            "temp": 25.49
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 270,
+            "gust": 1.6,
+            "speed": 1.74
+          }
+        },
+        {
+          "clouds": {
+            "all": 23
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 00:00:00",
+          "main": {
+            "feels_like": 26.64,
+            "pressure": 1010,
+            "temp": 26.64
+          },
+          "weather": [
+            {
+              "description": "few clouds",
+              "icon": "02d",
+              "id": 801,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 340,
+            "gust": 1.03,
+            "speed": 0.68
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 06:00:00",
+          "main": {
+            "feels_like": 29.63,
+            "pressure": 1007,
+            "temp": 27.33
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 38,
+            "gust": 2,
+            "speed": 2.03
+          }
+        },
+        {
+          "clouds": {
+            "all": 78
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 12:00:00",
+          "main": {
+            "feels_like": 30.33,
+            "pressure": 1011,
+            "temp": 26.73
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04n",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 313,
+            "gust": 1.96,
+            "speed": 1.74
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 18:00:00",
+          "main": {
+            "feels_like": 26.91,
+            "pressure": 1009,
+            "temp": 25.84
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 296,
+            "gust": 1.76,
+            "speed": 1.73
+          }
+        }
+      ]
+    },
+    {
+      "city": {
+        "name": "Sampiro",
+        "country": "Philippines"
+      },
+      "list": [
+        {
+          "clouds": {
+            "all": 57
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 00:00:00",
+          "main": {
+            "feels_like": 30.29,
+            "pressure": 1012,
+            "temp": 26.81
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04d",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 29,
+            "gust": 0,
+            "speed": 2.57
+          }
+        },
+        {
+          "clouds": {
+            "all": 88
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 06:00:00",
+          "main": {
+            "feels_like": 38.3,
+            "pressure": 1009,
+            "temp": 31.3
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 51,
+            "gust": 0,
+            "speed": 4.32
+          }
+        },
+        {
+          "clouds": {
+            "all": 26
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 12:00:00",
+          "main": {
+            "feels_like": 30.36,
+            "pressure": 1011,
+            "temp": 26.94
+          },
+          "weather": [
+            {
+              "description": "scattered clouds",
+              "icon": "03n",
+              "id": 802,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 34,
+            "gust": 0,
+            "speed": 3.25
+          }
+        },
+        {
+          "clouds": {
+            "all": 51
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 18:00:00",
+          "main": {
+            "feels_like": 26.06,
+            "pressure": 1011,
+            "temp": 25.12
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04n",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 43,
+            "gust": 0,
+            "speed": 2.82
+          }
+        },
+        {
+          "clouds": {
+            "all": 81
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 00:00:00",
+          "main": {
+            "feels_like": 26.08,
+            "pressure": 1012,
+            "temp": 26.08
+          },
+          "weather": [
+            {
+              "description": "broken clouds",
+              "icon": "04d",
+              "id": 803,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 38,
+            "gust": 0,
+            "speed": 3.29
+          }
+        },
+        {
+          "clouds": {
+            "all": 93
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 06:00:00",
+          "main": {
+            "feels_like": 35.8,
+            "pressure": 1010,
+            "temp": 29.29
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 31,
+            "gust": 0,
+            "speed": 6.77
+          }
+        },
+        {
+          "clouds": {
+            "all": 98
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 12:00:00",
+          "main": {
+            "feels_like": 26.3,
+            "pressure": 1012,
+            "temp": 26.3
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 36,
+            "gust": 0,
+            "speed": 7.1
+          },
+          "rain": 0.55
+        },
+        {
+          "clouds": {
+            "all": 87
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 18:00:00",
+          "main": {
+            "feels_like": 26.28,
+            "pressure": 1010,
+            "temp": 25.34
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 40,
+            "gust": 0,
+            "speed": 7.85
+          }
+        },
+        {
+          "clouds": {
+            "all": 50
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 00:00:00",
+          "main": {
+            "feels_like": 25.99,
+            "pressure": 1012,
+            "temp": 25.99
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 43,
+            "gust": 0,
+            "speed": 7.25
+          },
+          "rain": 0.17
+        },
+        {
+          "clouds": {
+            "all": 86
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 06:00:00",
+          "main": {
+            "feels_like": 25.99,
+            "pressure": 1009,
+            "temp": 25.99
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 34,
+            "gust": 6.32,
+            "speed": 6.05
+          }
+        },
+        {
+          "clouds": {
+            "all": 98
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 12:00:00",
+          "main": {
+            "feels_like": 25.68,
+            "pressure": 1011,
+            "temp": 24.94
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 32,
+            "gust": 11.62,
+            "speed": 10.46
+          },
+          "rain": 1.88
+        },
+        {
+          "clouds": {
+            "all": 45
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 18:00:00",
+          "main": {
+            "feels_like": 25.21,
+            "pressure": 1010,
+            "temp": 24.49
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 30,
+            "gust": 10.72,
+            "speed": 9.89
+          },
+          "rain": 1.38
+        },
+        {
+          "clouds": {
+            "all": 90
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 00:00:00",
+          "main": {
+            "feels_like": 25.8,
+            "pressure": 1012,
+            "temp": 25.05
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 34,
+            "gust": 9.84,
+            "speed": 8.6
+          }
+        },
+        {
+          "clouds": {
+            "all": 11
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 06:00:00",
+          "main": {
+            "feels_like": 25.97,
+            "pressure": 1009,
+            "temp": 25.97
+          },
+          "weather": [
+            {
+              "description": "few clouds",
+              "icon": "02d",
+              "id": 801,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 36,
+            "gust": 10.54,
+            "speed": 9.75
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 12:00:00",
+          "main": {
+            "feels_like": 25.73,
+            "pressure": 1011,
+            "temp": 24.82
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 42,
+            "gust": 12.43,
+            "speed": 9.58
+          },
+          "rain": 5
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 18:00:00",
+          "main": {
+            "feels_like": 25.85,
+            "pressure": 1009,
+            "temp": 25.04
+          },
+          "weather": [
+            {
+              "description": "overcast clouds",
+              "icon": "04n",
+              "id": 804,
+              "main": "Clouds"
+            }
+          ],
+          "wind": {
+            "deg": 46,
+            "gust": 9.5,
+            "speed": 8
+          }
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 00:00:00",
+          "main": {
+            "feels_like": 25.66,
+            "pressure": 1011,
+            "temp": 24.73
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 51,
+            "gust": 11.73,
+            "speed": 8.55
+          },
+          "rain": 3.81
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 06:00:00",
+          "main": {
+            "feels_like": 25.72,
+            "pressure": 1009,
+            "temp": 24.9
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10d",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 59,
+            "gust": 7.6,
+            "speed": 6.45
+          },
+          "rain": 2.69
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 12:00:00",
+          "main": {
+            "feels_like": 25.76,
+            "pressure": 1011,
+            "temp": 24.82
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 46,
+            "gust": 12.76,
+            "speed": 9.1
+          },
+          "rain": 4.81
+        },
+        {
+          "clouds": {
+            "all": 100
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 18:00:00",
+          "main": {
+            "feels_like": 25.61,
+            "pressure": 1010,
+            "temp": 24.8
+          },
+          "weather": [
+            {
+              "description": "light rain",
+              "icon": "10n",
+              "id": 500,
+              "main": "Rain"
+            }
+          ],
+          "wind": {
+            "deg": 58,
+            "gust": 9.16,
+            "speed": 7.7
+          },
+          "rain": 4.06
+        }
+      ]
+    },
+    {
+      "city": {
+        "name": "El Cazadero",
+        "country": "Mexico"
+      },
+      "list": [
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 00:00:00",
+          "main": {
+            "feels_like": 22.59,
+            "pressure": 1015,
+            "temp": 23.74
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 64,
+            "gust": 0,
+            "speed": 1.36
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 06:00:00",
+          "main": {
+            "feels_like": 13.64,
+            "pressure": 1018,
+            "temp": 15.06
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 50,
+            "gust": 0,
+            "speed": 1.4
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 12:00:00",
+          "main": {
+            "feels_like": 7.69,
+            "pressure": 1020,
+            "temp": 7.69
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 159,
+            "gust": 0,
+            "speed": 1.12
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Monday",
+          "dt_txt": "2025-02-03 18:00:00",
+          "main": {
+            "feels_like": 20.12,
+            "pressure": 1019,
+            "temp": 21.02
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 142,
+            "gust": 0,
+            "speed": 1.75
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 00:00:00",
+          "main": {
+            "feels_like": 23.67,
+            "pressure": 1013,
+            "temp": 24.72
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 37,
+            "gust": 0,
+            "speed": 2.92
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 06:00:00",
+          "main": {
+            "feels_like": 15.38,
+            "pressure": 1017,
+            "temp": 16.83
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 90,
+            "gust": 0,
+            "speed": 1.11
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 12:00:00",
+          "main": {
+            "feels_like": 7.34,
+            "pressure": 1018,
+            "temp": 7.34
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 150,
+            "gust": 0,
+            "speed": 0.75
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Tuesday",
+          "dt_txt": "2025-02-04 18:00:00",
+          "main": {
+            "feels_like": 20.74,
+            "pressure": 1018,
+            "temp": 21.78
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 296,
+            "gust": 0,
+            "speed": 1.34
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 00:00:00",
+          "main": {
+            "feels_like": 23.76,
+            "pressure": 1013,
+            "temp": 24.78
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 348,
+            "gust": 0,
+            "speed": 3.11
+          }
+        },
+        {
+          "clouds": {
+            "all": 1
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 06:00:00",
+          "main": {
+            "feels_like": 11.76,
+            "pressure": 1018,
+            "temp": 13.54
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 343,
+            "gust": 2.22,
+            "speed": 2.15
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 12:00:00",
+          "main": {
+            "feels_like": 9.14,
+            "pressure": 1018,
+            "temp": 9.73
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 289,
+            "gust": 1.72,
+            "speed": 1.7
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Wednesday",
+          "dt_txt": "2025-02-05 18:00:00",
+          "main": {
+            "feels_like": 20,
+            "pressure": 1017,
+            "temp": 21.27
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 240,
+            "gust": 1.72,
+            "speed": 2.21
+          }
+        },
+        {
+          "clouds": {
+            "all": 3
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 00:00:00",
+          "main": {
+            "feels_like": 22.65,
+            "pressure": 1012,
+            "temp": 23.75
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 295,
+            "gust": 3.14,
+            "speed": 2.76
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 06:00:00",
+          "main": {
+            "feels_like": 14.07,
+            "pressure": 1017,
+            "temp": 15.74
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 21,
+            "gust": 2.94,
+            "speed": 2.98
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 12:00:00",
+          "main": {
+            "feels_like": 9.67,
+            "pressure": 1017,
+            "temp": 11.43
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 346,
+            "gust": 0.63,
+            "speed": 0.68
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Thursday",
+          "dt_txt": "2025-02-06 18:00:00",
+          "main": {
+            "feels_like": 21.07,
+            "pressure": 1017,
+            "temp": 22.31
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 38,
+            "gust": 1.4,
+            "speed": 0.91
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 00:00:00",
+          "main": {
+            "feels_like": 22.85,
+            "pressure": 1013,
+            "temp": 24.03
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 42,
+            "gust": 5.23,
+            "speed": 4.45
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 06:00:00",
+          "main": {
+            "feels_like": 12.78,
+            "pressure": 1019,
+            "temp": 14.78
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 33,
+            "gust": 1.6,
+            "speed": 1.55
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 12:00:00",
+          "main": {
+            "feels_like": 9.59,
+            "pressure": 1019,
+            "temp": 11.45
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01n",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 67,
+            "gust": 1.46,
+            "speed": 1.43
+          }
+        },
+        {
+          "clouds": {
+            "all": 0
+          },
+          "day_of_week": "Friday",
+          "dt_txt": "2025-02-07 18:00:00",
+          "main": {
+            "feels_like": 20.54,
+            "pressure": 1018,
+            "temp": 21.71
+          },
+          "weather": [
+            {
+              "description": "clear sky",
+              "icon": "01d",
+              "id": 800,
+              "main": "Clear"
+            }
+          ],
+          "wind": {
+            "deg": 75,
+            "gust": 1.96,
+            "speed": 2.43
+          }
+        }
+      ]
+    }
+  ]
+}

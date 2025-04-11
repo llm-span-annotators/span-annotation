@@ -1,0 +1,60 @@
+annotation_span_categories:
+- name: Contradictory
+  description: The fact contradicts the data.
+- name: Not checkable
+  description: The fact cannot be verified from the data.
+- name: Misleading
+  description: ' The fact leaves out important information.'
+- name: Incoherent
+  description: The text uses unnatural phrasing or does not fit the discourse.
+- name: Repetitive
+  description: The fact has been already mentioned earlier in the text.
+- name: Other
+  description: The text is problematic for another reason.
+annotator_instructions: 'In this task, you will annotate textual outputs. For each
+  example, you will see **inputs** on the left side and the corresponding **text**
+  on the right side. Your task is to **highlight spans** in the text according to
+  the instructions.
+
+
+  These are the span categories you can mark in the generated text: <p>
+
+  - <span style="color: rgb(214, 39, 40); text-decoration: underline; text-decoration-thickness:
+  4px; text-decoration-skip-ink: none"><b>Contradictory</b></span>: The fact contradicts
+  the data.
+
+  - <span style="color: rgb(148, 103, 189); text-decoration: underline; text-decoration-thickness:
+  4px; text-decoration-skip-ink: none"><b>Not checkable</b></span>: The fact cannot
+  be verified from the data.
+
+  - <span style="color: rgb(230, 171, 2); text-decoration: underline; text-decoration-thickness:
+  4px; text-decoration-skip-ink: none"><b>Misleading</b></span>:  The fact leaves
+  out important information.
+
+  - <span style="color: rgb(140, 86, 75); text-decoration: underline; text-decoration-thickness:
+  4px; text-decoration-skip-ink: none"><b>Incoherent</b></span>: The text uses unnatural
+  phrasing or does not fit the discourse.
+
+  - <span style="color: rgb(27, 158, 119); text-decoration: underline; text-decoration-thickness:
+  4px; text-decoration-skip-ink: none"><b>Repetitive</b></span>: The fact has been
+  already mentioned earlier in the text.
+
+  - <span style="color: rgb(102, 102, 102); text-decoration: underline; text-decoration-thickness:
+  4px; text-decoration-skip-ink: none"><b>Other</b></span>: The text is problematic
+  for another reason.
+
+  </p>
+
+
+  You can annotate the errors by selecting the appropriate error category and dragging
+  your mouse over the text, highlighting the error span.
+
+
+  Once you think you have marked all the errors present in the text, click the **✅
+  Mark example as complete** button (you can still update the annotation later).
+
+
+  You will be able to submit the annotations once they are all are marked as complete.'
+annotation_granularity: words
+annotation_overlap_allowed: true
+campaign_orig_id: gold-internal
