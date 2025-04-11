@@ -24,7 +24,7 @@ The `outputs` directory contains the outputs:
 
 Each output file is a JSONL file with the following structure:
 
-```json
+```
 {
   "dataset": [dataset_id], 
   "split": [split_id],
