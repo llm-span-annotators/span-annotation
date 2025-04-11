@@ -71,3 +71,4 @@ Each line in an annotations.jsonl file contains a JSON object with:
   - `start`: Character position where the span starts
   - `id`: Unique identifier for the annotation
 - `annotator_group`: Annotator group (a single output can have annotation sets from different groups).
+- `thinking_trace` (only DeepSeek-R1 and Llama 3.3-CoT): Reasoning trace of the model.
