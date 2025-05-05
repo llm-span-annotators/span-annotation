@@ -72,3 +72,36 @@ Each line in an annotations.jsonl file contains a JSON object with:
   - `id`: Unique identifier for the annotation
 - `annotator_group`: Annotator group (a single output can have annotation sets from different groups).
 - `thinking_trace` (only DeepSeek-R1 and Llama 3.3-CoT): Reasoning trace of the model.
+
+
+## Visualizing the Data
+To visualize the data and annotations using `factgenie`:
+
+### Setup
+
+1. Initialize the `factgenie` submodule:
+   ```bash
+   git submodule update --init --recursive
+   ```
+
+2. Convert the data to `factgenie` format:
+   ```bash
+   python utils/convert_to_factgenie.py
+   ```
+
+3. Install `factgenie` as an editable package:
+   ```bash
+   cd factgenie
+   pip install -e .
+   ```
+4. Start the `factgenie` server:
+```bash
+factgenie run --port=8890 --host=127.0.0.1
+```
+
+Then open your browser and navigate to http://127.0.0.1:8890 to view the data and annotations.
+
+In the web interface, you'll be able to:
+- Browse through different annotation campaigns.
+- View the span annotations overlaid on the text.
+- Compare annotations from different sources (human vs. model).
