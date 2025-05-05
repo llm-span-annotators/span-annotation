@@ -1,17 +1,23 @@
 annotation_span_categories:
 - name: Contradictory
   description: The fact contradicts the data.
+  color: rgb(214, 39, 40)
 - name: Not checkable
   description: The fact cannot be verified from the data.
+  color: rgb(148, 103, 189)
 - name: Misleading
   description: The fact is technically true, but leaves out important information
     or otherwise distorts the context.
+  color: rgb(230, 171, 2)
 - name: Incoherent
   description: The text uses unnatural phrasing or does not fit the discourse.
+  color: rgb(140, 86, 75)
 - name: Repetitive
   description: The fact has been already mentioned earlier in the text.
+  color: rgb(27, 158, 119)
 - name: Other
   description: The text is problematic for another reason.
+  color: rgb(102, 102, 102)
 prompt_template: "Your task is to identify errors in the text and classify them.\n\
   \nOutput the errors as a JSON object with a single key \"annotations\". The value\
   \ of \"annotations\" is a list in which each object contains fields \"reason\",\
@@ -25,7 +31,7 @@ prompt_template: "Your task is to identify errors in the text and classify them.
   \ (The text uses unnatural phrasing or does not fit the discourse.)\n4: Repetitive\
   \ (The fact has been already mentioned earlier in the text.)\n5: Other (The text\
   \ is problematic for another reason.)\n\nExamples:\n- Contradictory: The lowest\
-  \ temperature does not drop below 4°C, but the text mentions 2°C.\n- Not checkable:\
+  \ temperature does not drop below 4\xB0C, but the text mentions 2\xB0C.\n- Not checkable:\
   \ The text mentions that \"both teams display aggressive play\", which cannot be\
   \ checked from the data.\n- Misleading: The tone of the text suggests there are\
   \ many sensors out of which just a few are listed here. However, according to the\
@@ -40,10 +46,10 @@ prompt_template: "Your task is to identify errors in the text and classify them.
   \ sure about an annotation, skip it.\n- Ignore subjective statements: for example\
   \ \"a lightweight smartphone\" highly depends on the context: you should not annotate\
   \ these statements.\n- Numerical conventions: For weather forecasts, we accept both\
-  \ precise numbers (e.g. 10.71°C) and the rounded ones (e.g. 11°C) as long as they\
-  \ agree with the data.\n- Annotate only according to your own knowledge. If you\
-  \ are considering using an external tool (Google, ChatGPT etc.), just skip that\
-  \ specific fact.\n\nIf there is nothing to annotate in the text, \"annotations\"\
+  \ precise numbers (e.g. 10.71\xB0C) and the rounded ones (e.g. 11\xB0C) as long\
+  \ as they agree with the data.\n- Annotate only according to your own knowledge.\
+  \ If you are considering using an external tool (Google, ChatGPT etc.), just skip\
+  \ that specific fact.\n\nIf there is nothing to annotate in the text, \"annotations\"\
   \ will be an empty list.\n\nIn order to help you with the task, we provide you with\
   \ five examples of inputs, outputs and annotations:\n\nExample #1:\ndata:\n```\n\
   {\"datetime\": \"2024-11-17 01:30:00\", \"events\": [{\"assist\": \"Lucas Lima\"\
@@ -52,140 +58,142 @@ prompt_template: "Your task is to identify errors in the text and classify them.
   : null, \"comments\": null, \"detail\": \"Red Card\", \"player\": \"Luiz Felipe\"\
   , \"team\": \"Ponte Preta\", \"time\": \"24'\", \"type\": \"Card\" }, {\"assist\"\
   : \"Lenny Lobato\", \"comments\": null, \"detail\": \"Normal Goal\", \"player\"\
-  : \"F. Domínguez\", \"team\": \"Sport Recife\", \"time\": \"34'\", \"type\": \"\
-  Goal\" }, {\"assist\": \"Hudson\", \"comments\": null, \"detail\": \"Substitution\
-  \ 1\", \"player\": \"Élvis\", \"team\": \"Ponte Preta\", \"time\": \"38'\", \"type\"\
-  : \"subst\" }, {\"assist\": null, \"comments\": null, \"detail\": \"Yellow Card\"\
-  , \"player\": \"Igor Inocencio\", \"team\": \"Ponte Preta\", \"time\": \"40'\",\
-  \ \"type\": \"Card\" }, {\"assist\": \"Wellington Silva\", \"comments\": null, \"\
-  detail\": \"Substitution 1\", \"player\": \"C. Ortíz\", \"team\": \"Sport Recife\"\
-  , \"time\": \"46'\", \"type\": \"subst\" }, {\"assist\": \"João Gabriel\", \"comments\"\
-  : null, \"detail\": \"Substitution 2\", \"player\": \"Igor Inocêncio\", \"team\"\
-  : \"Ponte Preta\", \"time\": \"46'\", \"type\": \"subst\" }, {\"assist\": \"Chico\"\
-  , \"comments\": null, \"detail\": \"Normal Goal\", \"player\": \"Rafael Thyere\"\
-  , \"team\": \"Sport Recife\", \"time\": \"48'\", \"type\": \"Goal\" }, {\"assist\"\
-  : \"Pedro Vilhena\", \"comments\": null, \"detail\": \"Substitution 2\", \"player\"\
-  : \"Chrystian Barletta\", \"team\": \"Sport Recife\", \"time\": \"61'\", \"type\"\
-  : \"subst\" }, {\"assist\": \"Felipe\", \"comments\": null, \"detail\": \"Substitution\
-  \ 3\", \"player\": \"J. Fernández\", \"team\": \"Sport Recife\", \"time\": \"61'\"\
-  , \"type\": \"subst\" }, {\"assist\": \"Dodô\", \"comments\": null, \"detail\":\
-  \ \"Substitution 3\", \"player\": \"Renato\", \"team\": \"Ponte Preta\", \"time\"\
-  : \"66'\", \"type\": \"subst\" }, {\"assist\": \"Ramon\", \"comments\": null, \"\
-  detail\": \"Substitution 4\", \"player\": \"Emerson\", \"team\": \"Ponte Preta\"\
-  , \"time\": \"66'\", \"type\": \"subst\" }, {\"assist\": \"Fabinho\", \"comments\"\
-  : null, \"detail\": \"Substitution 4\", \"player\": \"F. Domínguez\", \"team\":\
-  \ \"Sport Recife\", \"time\": \"70'\", \"type\": \"subst\" }, {\"assist\": \"Matheus\
-  \ Régis\", \"comments\": null, \"detail\": \"Substitution 5\", \"player\": \"Gabriel\
-  \ Novaes\", \"team\": \"Ponte Preta\", \"time\": \"77'\", \"type\": \"subst\" },\
-  \ {\"assist\": \"Luciano Castán\", \"comments\": null, \"detail\": \"Substitution\
-  \ 5\", \"player\": \"Chico\", \"team\": \"Sport Recife\", \"time\": \"84'\", \"\
-  type\": \"subst\" }, {\"assist\": \"Lucas Lima\", \"comments\": null, \"detail\"\
-  : \"Normal Goal\", \"player\": \"Fabinho\", \"team\": \"Sport Recife\", \"time\"\
-  : \"85'\", \"type\": \"Goal\" }, {\"assist\": null, \"comments\": null, \"detail\"\
-  : \"Yellow Card\", \"player\": \"Hudson\", \"team\": \"Ponte Preta\", \"time\":\
-  \ \"89'\", \"type\": \"Card\" } ], \"goals\": {\"away\": 4, \"home\": 0 }, \"league\"\
-  : {\"country\": \"Brazil\", \"flag\": \"https://media.api-sports.io/flags/br.svg\"\
-  , \"id\": 72, \"logo\": \"https://media.api-sports.io/football/leagues/72.png\"\
-  , \"name\": \"Serie B\", \"round\": \"Regular Season - 37\", \"season\": 2024, \"\
-  standings\": true }, \"referee\": \"Rafael Rodrigo Klein\", \"score\": {\"extratime\"\
-  : {\"away\": null, \"home\": null }, \"fulltime\": {\"away\": 4, \"home\": 0 },\
-  \ \"halftime\": {\"away\": 2, \"home\": 0 }, \"penalty\": {\"away\": null, \"home\"\
-  : null } }, \"status\": {\"elapsed\": 90, \"extra\": 3, \"long\": \"Match Finished\"\
-  , \"short\": \"FT\" }, \"teams\": {\"away\": {\"id\": 123, \"logo\": \"https://media.api-sports.io/football/teams/123.png\"\
-  , \"name\": \"Sport Recife\", \"winner\": true }, \"home\": {\"id\": 139, \"logo\"\
-  : \"https://media.api-sports.io/football/teams/139.png\", \"name\": \"Ponte Preta\"\
-  , \"winner\": false } }, \"venue_data\": {\"city\": \"Campinas, São Paulo\", \"\
-  name\": \"Estádio Moisés Lucarelli\" }\n```\ntext:\n```\nSport Recife defeated Ponte\
-  \ Preta with a final score of 4-0. The match saw Sport Recife's Chrystian Barletta\
-  \ and F. Domínguez score goals for the away team. Ponte Preta had several opportunities\
-  \ but were unable to capitalize on them.The game was played at Estádio Moisés Lucarelli\
-  \ in Campinas, São Paulo.\n```\noutput:\n```\n{ \n  \"annotations\": [] \n}\n```\n\
-  \n\nExample #2: \ndata:\n```\n{\"datetime\": \"2024-11-17 01:30:00\", \"events\"\
-  : [{\"assist\": \"Lucas Lima\", \"comments\": null, \"detail\": \"Normal Goal\"\
-  , \"player\": \"Chrystian Barletta\", \"team\": \"Sport Recife\", \"time\": \"7'\"\
-  , \"type\": \"Goal\" }, {\"assist\": null, \"comments\": null, \"detail\": \"Red\
-  \ Card\", \"player\": \"Luiz Felipe\", \"team\": \"Ponte Preta\", \"time\": \"24'\"\
-  , \"type\": \"Card\" }, {\"assist\": \"Lenny Lobato\", \"comments\": null, \"detail\"\
-  : \"Normal Goal\", \"player\": \"F. Domínguez\", \"team\": \"Sport Recife\", \"\
-  time\": \"34'\", \"type\": \"Goal\" }, {\"assist\": \"Hudson\", \"comments\": null,\
-  \ \"detail\": \"Substitution 1\", \"player\": \"Élvis\", \"team\": \"Ponte Preta\"\
-  , \"time\": \"38'\", \"type\": \"subst\" }, {\"assist\": null, \"comments\": null,\
-  \ \"detail\": \"Yellow Card\", \"player\": \"Igor Inocencio\", \"team\": \"Ponte\
-  \ Preta\", \"time\": \"40'\", \"type\": \"Card\" }, {\"assist\": \"Wellington Silva\"\
-  , \"comments\": null, \"detail\": \"Substitution 1\", \"player\": \"C. Ortíz\",\
-  \ \"team\": \"Sport Recife\", \"time\": \"46'\", \"type\": \"subst\" }, {\"assist\"\
-  : \"João Gabriel\", \"comments\": null, \"detail\": \"Substitution 2\", \"player\"\
-  : \"Igor Inocêncio\", \"team\": \"Ponte Preta\", \"time\": \"46'\", \"type\": \"\
-  subst\" }, {\"assist\": \"Chico\", \"comments\": null, \"detail\": \"Normal Goal\"\
-  , \"player\": \"Rafael Thyere\", \"team\": \"Sport Recife\", \"time\": \"48'\",\
-  \ \"type\": \"Goal\" }, {\"assist\": \"Pedro Vilhena\", \"comments\": null, \"detail\"\
-  : \"Substitution 2\", \"player\": \"Chrystian Barletta\", \"team\": \"Sport Recife\"\
-  , \"time\": \"61'\", \"type\": \"subst\" }, {\"assist\": \"Felipe\", \"comments\"\
-  : null, \"detail\": \"Substitution 3\", \"player\": \"J. Fernández\", \"team\":\
-  \ \"Sport Recife\", \"time\": \"61'\", \"type\": \"subst\" }, {\"assist\": \"Dodô\"\
-  , \"comments\": null, \"detail\": \"Substitution 3\", \"player\": \"Renato\", \"\
+  : \"F. Dom\xEDnguez\", \"team\": \"Sport Recife\", \"time\": \"34'\", \"type\":\
+  \ \"Goal\" }, {\"assist\": \"Hudson\", \"comments\": null, \"detail\": \"Substitution\
+  \ 1\", \"player\": \"\xC9lvis\", \"team\": \"Ponte Preta\", \"time\": \"38'\", \"\
+  type\": \"subst\" }, {\"assist\": null, \"comments\": null, \"detail\": \"Yellow\
+  \ Card\", \"player\": \"Igor Inocencio\", \"team\": \"Ponte Preta\", \"time\": \"\
+  40'\", \"type\": \"Card\" }, {\"assist\": \"Wellington Silva\", \"comments\": null,\
+  \ \"detail\": \"Substitution 1\", \"player\": \"C. Ort\xEDz\", \"team\": \"Sport\
+  \ Recife\", \"time\": \"46'\", \"type\": \"subst\" }, {\"assist\": \"Jo\xE3o Gabriel\"\
+  , \"comments\": null, \"detail\": \"Substitution 2\", \"player\": \"Igor Inoc\xEA\
+  ncio\", \"team\": \"Ponte Preta\", \"time\": \"46'\", \"type\": \"subst\" }, {\"\
+  assist\": \"Chico\", \"comments\": null, \"detail\": \"Normal Goal\", \"player\"\
+  : \"Rafael Thyere\", \"team\": \"Sport Recife\", \"time\": \"48'\", \"type\": \"\
+  Goal\" }, {\"assist\": \"Pedro Vilhena\", \"comments\": null, \"detail\": \"Substitution\
+  \ 2\", \"player\": \"Chrystian Barletta\", \"team\": \"Sport Recife\", \"time\"\
+  : \"61'\", \"type\": \"subst\" }, {\"assist\": \"Felipe\", \"comments\": null, \"\
+  detail\": \"Substitution 3\", \"player\": \"J. Fern\xE1ndez\", \"team\": \"Sport\
+  \ Recife\", \"time\": \"61'\", \"type\": \"subst\" }, {\"assist\": \"Dod\xF4\",\
+  \ \"comments\": null, \"detail\": \"Substitution 3\", \"player\": \"Renato\", \"\
   team\": \"Ponte Preta\", \"time\": \"66'\", \"type\": \"subst\" }, {\"assist\":\
   \ \"Ramon\", \"comments\": null, \"detail\": \"Substitution 4\", \"player\": \"\
   Emerson\", \"team\": \"Ponte Preta\", \"time\": \"66'\", \"type\": \"subst\" },\
   \ {\"assist\": \"Fabinho\", \"comments\": null, \"detail\": \"Substitution 4\",\
-  \ \"player\": \"F. Domínguez\", \"team\": \"Sport Recife\", \"time\": \"70'\", \"\
-  type\": \"subst\" }, {\"assist\": \"Matheus Régis\", \"comments\": null, \"detail\"\
-  : \"Substitution 5\", \"player\": \"Gabriel Novaes\", \"team\": \"Ponte Preta\"\
-  , \"time\": \"77'\", \"type\": \"subst\" }, {\"assist\": \"Luciano Castán\", \"\
-  comments\": null, \"detail\": \"Substitution 5\", \"player\": \"Chico\", \"team\"\
-  : \"Sport Recife\", \"time\": \"84'\", \"type\": \"subst\" }, {\"assist\": \"Lucas\
-  \ Lima\", \"comments\": null, \"detail\": \"Normal Goal\", \"player\": \"Fabinho\"\
-  , \"team\": \"Sport Recife\", \"time\": \"85'\", \"type\": \"Goal\" }, {\"assist\"\
-  : null, \"comments\": null, \"detail\": \"Yellow Card\", \"player\": \"Hudson\"\
-  , \"team\": \"Ponte Preta\", \"time\": \"89'\", \"type\": \"Card\" } ], \"goals\"\
-  : {\"away\": 4, \"home\": 0 }, \"league\": {\"country\": \"Brazil\", \"flag\": \"\
-  https://media.api-sports.io/flags/br.svg\", \"id\": 72, \"logo\": \"https://media.api-sports.io/football/leagues/72.png\"\
-  , \"name\": \"Serie B\", \"round\": \"Regular Season - 37\", \"season\": 2024, \"\
-  standings\": true }, \"referee\": \"Rafael Rodrigo Klein\", \"score\": {\"extratime\"\
-  : {\"away\": null, \"home\": null }, \"fulltime\": {\"away\": 4, \"home\": 0 },\
-  \ \"halftime\": {\"away\": 2, \"home\": 0 }, \"penalty\": {\"away\": null, \"home\"\
-  : null } }, \"status\": {\"elapsed\": 90, \"extra\": 3, \"long\": \"Match Finished\"\
-  , \"short\": \"FT\" }, \"teams\": {\"away\": {\"id\": 123, \"logo\": \"https://media.api-sports.io/football/teams/123.png\"\
+  \ \"player\": \"F. Dom\xEDnguez\", \"team\": \"Sport Recife\", \"time\": \"70'\"\
+  , \"type\": \"subst\" }, {\"assist\": \"Matheus R\xE9gis\", \"comments\": null,\
+  \ \"detail\": \"Substitution 5\", \"player\": \"Gabriel Novaes\", \"team\": \"Ponte\
+  \ Preta\", \"time\": \"77'\", \"type\": \"subst\" }, {\"assist\": \"Luciano Cast\xE1\
+  n\", \"comments\": null, \"detail\": \"Substitution 5\", \"player\": \"Chico\",\
+  \ \"team\": \"Sport Recife\", \"time\": \"84'\", \"type\": \"subst\" }, {\"assist\"\
+  : \"Lucas Lima\", \"comments\": null, \"detail\": \"Normal Goal\", \"player\": \"\
+  Fabinho\", \"team\": \"Sport Recife\", \"time\": \"85'\", \"type\": \"Goal\" },\
+  \ {\"assist\": null, \"comments\": null, \"detail\": \"Yellow Card\", \"player\"\
+  : \"Hudson\", \"team\": \"Ponte Preta\", \"time\": \"89'\", \"type\": \"Card\" }\
+  \ ], \"goals\": {\"away\": 4, \"home\": 0 }, \"league\": {\"country\": \"Brazil\"\
+  , \"flag\": \"https://media.api-sports.io/flags/br.svg\", \"id\": 72, \"logo\":\
+  \ \"https://media.api-sports.io/football/leagues/72.png\", \"name\": \"Serie B\"\
+  , \"round\": \"Regular Season - 37\", \"season\": 2024, \"standings\": true }, \"\
+  referee\": \"Rafael Rodrigo Klein\", \"score\": {\"extratime\": {\"away\": null,\
+  \ \"home\": null }, \"fulltime\": {\"away\": 4, \"home\": 0 }, \"halftime\": {\"\
+  away\": 2, \"home\": 0 }, \"penalty\": {\"away\": null, \"home\": null } }, \"status\"\
+  : {\"elapsed\": 90, \"extra\": 3, \"long\": \"Match Finished\", \"short\": \"FT\"\
+  \ }, \"teams\": {\"away\": {\"id\": 123, \"logo\": \"https://media.api-sports.io/football/teams/123.png\"\
   , \"name\": \"Sport Recife\", \"winner\": true }, \"home\": {\"id\": 139, \"logo\"\
   : \"https://media.api-sports.io/football/teams/139.png\", \"name\": \"Ponte Preta\"\
-  , \"winner\": false } }, \"venue_data\": {\"city\": \"Campinas, São Paulo\", \"\
-  name\": \"Estádio Moisés Lucarelli\" }\n```\ntext:\n```\nSport Recife secured a\
-  \ dominant 4-0 victory over Ponte Preta in a Serie B match at Estádio Moisés Lucarelli\
-  \ in Campinas, São Paulo. Chrystian Barletta opened the scoring for Sport Recife\
-  \ in the 7th minute, assisted by Lucas Lima, and F. Domínguez doubled their lead\
-  \ in the 34th minute with help from Lenny Lobato. Ponte Preta faced further challenges\
-  \ after Luiz Felipe received a red card in the 24th minute, leaving them with ten\
-  \ players for most of the match. Sport Recife continued their strong performance\
-  \ in the second half, with goals from Rafael Thyere in the 48th minute and Fabinho\
-  \ in the 85th minute. The match saw several substitutions and cards, with referee\
-  \ Rafael Rodrigo Klein overseeing the game, which concluded after 90 minutes plus\
-  \ 3 minutes of added time.\n```\noutput:\n```\n{ \n  \"annotations\": [\n    {\"\
-  reason\": \"There are no mentions of opportunities that Ponte Preta had in the data.\"\
-  \ \"text\": \"Ponte Preta had several opportunities but were unable to capitalize\
-  \ on them., \"annotation_type\": 1}\n  ]\n}\n```\n\nExample #3:\ndata:\n```\n{\"\
-  details\": {\"detailSpec\": [{\"category\": \"Network\", \"specifications\": [{\"\
-  name\": \"Technology\", \"value\": \"GSM / HSPA\" }, {\"name\": \"2G bands\", \"\
-  value\": \"GSM 850 / 900 / 1800 / 1900 \" }, {\"name\": \"3G bands\", \"value\"\
-  : \"HSDPA 850 / 1900 / 2100 \" }, {\"name\": \"Speed\", \"value\": \"Yes, 384 kbps\"\
-  \ } ] }, {\"category\": \"Launch\", \"specifications\": [{\"name\": \"Announced\"\
-  , \"value\": \"2007, February\" }, {\"name\": \"Status\", \"value\": \"Discontinued\"\
-  \ } ] }, {\"category\": \"Body\", \"specifications\": [{\"name\": \"Dimensions\"\
-  , \"value\": \"111 x 58 x 22 mm (4.37 x 2.28 x 0.87 in)\" }, {\"name\": \"Weight\"\
-  , \"value\": \"154 g (5.43 oz)\" }, {\"name\": \"Keyboard\", \"value\": \"QWERTY\"\
-  \ }, {\"name\": \"SIM\", \"value\": \"Mini-SIM\" } ] }, {\"category\": \"Display\"\
-  , \"specifications\": [{\"name\": \"Type\", \"value\": \"TFT resistive touchscreen,\
-  \ 65K colors\" }, {\"name\": \"Size\", \"value\": \"2.5 inches, 20.2 cm2 (~31.3%\
-  \ screen-to-body ratio)\" }, {\"name\": \"Resolution\", \"value\": \"240 x 240 pixels,\
-  \ 1:1 ratio (~136 ppi density)\" }, {\"name\": \" \", \"value\": \"5-way navigation\
-  \ button\" } ] }, {\"category\": \"Platform\", \"specifications\": [{\"name\": \"\
-  OS\", \"value\": \"Microsoft Windows Mobile 5.0 PocketPC\" }, {\"name\": \"CPU\"\
-  , \"value\": \"300 MHz Samsung\" } ] }, {\"category\": \"Memory\", \"specifications\"\
-  : [{\"name\": \"Card slot\", \"value\": \"miniSD, up to 2 GB\" }, {\"name\": \"\
-  Internal\", \"value\": \"60MB\" } ] }, {\"category\": \"Main Camera\", \"specifications\"\
-  : [{\"name\": \"Single\", \"value\": \"1.3 MP\" }, {\"name\": \"Video\", \"value\"\
-  : \"Yes\" } ] }, {\"category\": \"Selfie camera\", \"specifications\": [{\"name\"\
-  : \" \", \"value\": \"No\" } ] }, {\"category\": \"Sound\", \"specifications\":\
-  \ [{\"name\": \"Loudspeaker \", \"value\": \"Yes\" }, {\"name\": \"Alert types\"\
+  , \"winner\": false } }, \"venue_data\": {\"city\": \"Campinas, S\xE3o Paulo\",\
+  \ \"name\": \"Est\xE1dio Mois\xE9s Lucarelli\" }\n```\ntext:\n```\nSport Recife\
+  \ defeated Ponte Preta with a final score of 4-0. The match saw Sport Recife's Chrystian\
+  \ Barletta and F. Dom\xEDnguez score goals for the away team. Ponte Preta had several\
+  \ opportunities but were unable to capitalize on them.The game was played at Est\xE1\
+  dio Mois\xE9s Lucarelli in Campinas, S\xE3o Paulo.\n```\noutput:\n```\n{ \n  \"\
+  annotations\": [] \n}\n```\n\n\nExample #2: \ndata:\n```\n{\"datetime\": \"2024-11-17\
+  \ 01:30:00\", \"events\": [{\"assist\": \"Lucas Lima\", \"comments\": null, \"detail\"\
+  : \"Normal Goal\", \"player\": \"Chrystian Barletta\", \"team\": \"Sport Recife\"\
+  , \"time\": \"7'\", \"type\": \"Goal\" }, {\"assist\": null, \"comments\": null,\
+  \ \"detail\": \"Red Card\", \"player\": \"Luiz Felipe\", \"team\": \"Ponte Preta\"\
+  , \"time\": \"24'\", \"type\": \"Card\" }, {\"assist\": \"Lenny Lobato\", \"comments\"\
+  : null, \"detail\": \"Normal Goal\", \"player\": \"F. Dom\xEDnguez\", \"team\":\
+  \ \"Sport Recife\", \"time\": \"34'\", \"type\": \"Goal\" }, {\"assist\": \"Hudson\"\
+  , \"comments\": null, \"detail\": \"Substitution 1\", \"player\": \"\xC9lvis\",\
+  \ \"team\": \"Ponte Preta\", \"time\": \"38'\", \"type\": \"subst\" }, {\"assist\"\
+  : null, \"comments\": null, \"detail\": \"Yellow Card\", \"player\": \"Igor Inocencio\"\
+  , \"team\": \"Ponte Preta\", \"time\": \"40'\", \"type\": \"Card\" }, {\"assist\"\
+  : \"Wellington Silva\", \"comments\": null, \"detail\": \"Substitution 1\", \"player\"\
+  : \"C. Ort\xEDz\", \"team\": \"Sport Recife\", \"time\": \"46'\", \"type\": \"subst\"\
+  \ }, {\"assist\": \"Jo\xE3o Gabriel\", \"comments\": null, \"detail\": \"Substitution\
+  \ 2\", \"player\": \"Igor Inoc\xEAncio\", \"team\": \"Ponte Preta\", \"time\": \"\
+  46'\", \"type\": \"subst\" }, {\"assist\": \"Chico\", \"comments\": null, \"detail\"\
+  : \"Normal Goal\", \"player\": \"Rafael Thyere\", \"team\": \"Sport Recife\", \"\
+  time\": \"48'\", \"type\": \"Goal\" }, {\"assist\": \"Pedro Vilhena\", \"comments\"\
+  : null, \"detail\": \"Substitution 2\", \"player\": \"Chrystian Barletta\", \"team\"\
+  : \"Sport Recife\", \"time\": \"61'\", \"type\": \"subst\" }, {\"assist\": \"Felipe\"\
+  , \"comments\": null, \"detail\": \"Substitution 3\", \"player\": \"J. Fern\xE1\
+  ndez\", \"team\": \"Sport Recife\", \"time\": \"61'\", \"type\": \"subst\" }, {\"\
+  assist\": \"Dod\xF4\", \"comments\": null, \"detail\": \"Substitution 3\", \"player\"\
+  : \"Renato\", \"team\": \"Ponte Preta\", \"time\": \"66'\", \"type\": \"subst\"\
+  \ }, {\"assist\": \"Ramon\", \"comments\": null, \"detail\": \"Substitution 4\"\
+  , \"player\": \"Emerson\", \"team\": \"Ponte Preta\", \"time\": \"66'\", \"type\"\
+  : \"subst\" }, {\"assist\": \"Fabinho\", \"comments\": null, \"detail\": \"Substitution\
+  \ 4\", \"player\": \"F. Dom\xEDnguez\", \"team\": \"Sport Recife\", \"time\": \"\
+  70'\", \"type\": \"subst\" }, {\"assist\": \"Matheus R\xE9gis\", \"comments\": null,\
+  \ \"detail\": \"Substitution 5\", \"player\": \"Gabriel Novaes\", \"team\": \"Ponte\
+  \ Preta\", \"time\": \"77'\", \"type\": \"subst\" }, {\"assist\": \"Luciano Cast\xE1\
+  n\", \"comments\": null, \"detail\": \"Substitution 5\", \"player\": \"Chico\",\
+  \ \"team\": \"Sport Recife\", \"time\": \"84'\", \"type\": \"subst\" }, {\"assist\"\
+  : \"Lucas Lima\", \"comments\": null, \"detail\": \"Normal Goal\", \"player\": \"\
+  Fabinho\", \"team\": \"Sport Recife\", \"time\": \"85'\", \"type\": \"Goal\" },\
+  \ {\"assist\": null, \"comments\": null, \"detail\": \"Yellow Card\", \"player\"\
+  : \"Hudson\", \"team\": \"Ponte Preta\", \"time\": \"89'\", \"type\": \"Card\" }\
+  \ ], \"goals\": {\"away\": 4, \"home\": 0 }, \"league\": {\"country\": \"Brazil\"\
+  , \"flag\": \"https://media.api-sports.io/flags/br.svg\", \"id\": 72, \"logo\":\
+  \ \"https://media.api-sports.io/football/leagues/72.png\", \"name\": \"Serie B\"\
+  , \"round\": \"Regular Season - 37\", \"season\": 2024, \"standings\": true }, \"\
+  referee\": \"Rafael Rodrigo Klein\", \"score\": {\"extratime\": {\"away\": null,\
+  \ \"home\": null }, \"fulltime\": {\"away\": 4, \"home\": 0 }, \"halftime\": {\"\
+  away\": 2, \"home\": 0 }, \"penalty\": {\"away\": null, \"home\": null } }, \"status\"\
+  : {\"elapsed\": 90, \"extra\": 3, \"long\": \"Match Finished\", \"short\": \"FT\"\
+  \ }, \"teams\": {\"away\": {\"id\": 123, \"logo\": \"https://media.api-sports.io/football/teams/123.png\"\
+  , \"name\": \"Sport Recife\", \"winner\": true }, \"home\": {\"id\": 139, \"logo\"\
+  : \"https://media.api-sports.io/football/teams/139.png\", \"name\": \"Ponte Preta\"\
+  , \"winner\": false } }, \"venue_data\": {\"city\": \"Campinas, S\xE3o Paulo\",\
+  \ \"name\": \"Est\xE1dio Mois\xE9s Lucarelli\" }\n```\ntext:\n```\nSport Recife\
+  \ secured a dominant 4-0 victory over Ponte Preta in a Serie B match at Est\xE1\
+  dio Mois\xE9s Lucarelli in Campinas, S\xE3o Paulo. Chrystian Barletta opened the\
+  \ scoring for Sport Recife in the 7th minute, assisted by Lucas Lima, and F. Dom\xED\
+  nguez doubled their lead in the 34th minute with help from Lenny Lobato. Ponte Preta\
+  \ faced further challenges after Luiz Felipe received a red card in the 24th minute,\
+  \ leaving them with ten players for most of the match. Sport Recife continued their\
+  \ strong performance in the second half, with goals from Rafael Thyere in the 48th\
+  \ minute and Fabinho in the 85th minute. The match saw several substitutions and\
+  \ cards, with referee Rafael Rodrigo Klein overseeing the game, which concluded\
+  \ after 90 minutes plus 3 minutes of added time.\n```\noutput:\n```\n{ \n  \"annotations\"\
+  : [\n    {\"reason\": \"There are no mentions of opportunities that Ponte Preta\
+  \ had in the data.\" \"text\": \"Ponte Preta had several opportunities but were\
+  \ unable to capitalize on them., \"annotation_type\": 1}\n  ]\n}\n```\n\nExample\
+  \ #3:\ndata:\n```\n{\"details\": {\"detailSpec\": [{\"category\": \"Network\", \"\
+  specifications\": [{\"name\": \"Technology\", \"value\": \"GSM / HSPA\" }, {\"name\"\
+  : \"2G bands\", \"value\": \"GSM 850 / 900 / 1800 / 1900 \" }, {\"name\": \"3G bands\"\
+  , \"value\": \"HSDPA 850 / 1900 / 2100 \" }, {\"name\": \"Speed\", \"value\": \"\
+  Yes, 384 kbps\" } ] }, {\"category\": \"Launch\", \"specifications\": [{\"name\"\
+  : \"Announced\", \"value\": \"2007, February\" }, {\"name\": \"Status\", \"value\"\
+  : \"Discontinued\" } ] }, {\"category\": \"Body\", \"specifications\": [{\"name\"\
+  : \"Dimensions\", \"value\": \"111 x 58 x 22 mm (4.37 x 2.28 x 0.87 in)\" }, {\"\
+  name\": \"Weight\", \"value\": \"154 g (5.43 oz)\" }, {\"name\": \"Keyboard\", \"\
+  value\": \"QWERTY\" }, {\"name\": \"SIM\", \"value\": \"Mini-SIM\" } ] }, {\"category\"\
+  : \"Display\", \"specifications\": [{\"name\": \"Type\", \"value\": \"TFT resistive\
+  \ touchscreen, 65K colors\" }, {\"name\": \"Size\", \"value\": \"2.5 inches, 20.2\
+  \ cm2 (~31.3% screen-to-body ratio)\" }, {\"name\": \"Resolution\", \"value\": \"\
+  240 x 240 pixels, 1:1 ratio (~136 ppi density)\" }, {\"name\": \" \", \"value\"\
+  : \"5-way navigation button\" } ] }, {\"category\": \"Platform\", \"specifications\"\
+  : [{\"name\": \"OS\", \"value\": \"Microsoft Windows Mobile 5.0 PocketPC\" }, {\"\
+  name\": \"CPU\", \"value\": \"300 MHz Samsung\" } ] }, {\"category\": \"Memory\"\
+  , \"specifications\": [{\"name\": \"Card slot\", \"value\": \"miniSD, up to 2 GB\"\
+  \ }, {\"name\": \"Internal\", \"value\": \"60MB\" } ] }, {\"category\": \"Main Camera\"\
+  , \"specifications\": [{\"name\": \"Single\", \"value\": \"1.3 MP\" }, {\"name\"\
+  : \"Video\", \"value\": \"Yes\" } ] }, {\"category\": \"Selfie camera\", \"specifications\"\
+  : [{\"name\": \" \", \"value\": \"No\" } ] }, {\"category\": \"Sound\", \"specifications\"\
+  : [{\"name\": \"Loudspeaker \", \"value\": \"Yes\" }, {\"name\": \"Alert types\"\
   , \"value\": \"Vibration; Downloadable polyphonic, MP3 ringtones\" }, {\"name\"\
   : \"3.5mm jack \", \"value\": \"No\" } ] }, {\"category\": \"Comms\", \"specifications\"\
   : [{\"name\": \"WLAN\", \"value\": \"No\" }, {\"name\": \"Bluetooth\", \"value\"\
@@ -320,64 +328,65 @@ prompt_template: "Your task is to identify errors in the text and classify them.
   description\": \"few clouds\", \"icon\": \"02n\", \"id\": 801, \"main\": \"Clouds\"\
   \ } ], \"wind\": {\"deg\": 73, \"gust\": 1.86, \"speed\": 1.83 } } ], \"units\"\
   : {\"pressure\": \"hPa\", \"rain\": \"mm/h (6h)\", \"snow\": \"mm\", \"temp\": \"\
-  °C\", \"wind\": \"m/s\" } }\n```\ntext:\n```\nOver the next five days, Carsoli will\
-  \ experience a mix of clear skies and scattered clouds with temperatures ranging\
-  \ from 3°C to 12°C.There's a chance of occasional showers on Wednesday and Thursday,but\
-  \ overall, the weather appears mostly dry. Winds are generally moderate throughout\
-  \ the forecast period, with gusts reaching up to 2.77 m/s. The city will experience\
-  \ clear skies for most of the time, except for scattered clouds on Friday.\n```\n\
-  output:\n```\n{ \n  \"annotations\": [\n    {\"reason\" : \"The data shows that\
-  \ the lowest temperature will be 0.57°C and highest 13.66°C.\", \"text\": \"temperatures\
-  \ ranging from 3°C to 12°C.\", \"annotation_type\": 0},\n    {\"reason\" : \"There\
-  \ is no indication of rain showers on Wednesday or Thursday in the data.\", \"text\"\
-  : \"There's a chance of occasional showers on Wednesday and Thursday,\", \"annotation_type\"\
-  : 0}]\n    {\"reason\" : \"There are other occasions where the city will not experience\
-  \ clear skies, such as the light rain on Monday.\", \"text\": \"except for scattered\
-  \ clouds on Friday.\", \"annotation_type\": 2},\n}\n\n\nExample #5:\n\ndata:\n```\n\
-  {\"city\": {\"country\": \"Italy\", \"name\": \"Carsoli\" }, \"list\": [{\"clouds\"\
-  : {\"all\": 47 }, \"day_of_week\": \"Monday\", \"dt_txt\": \"2025-02-03 00:00:00\"\
-  , \"main\": {\"feels_like\": 6.85, \"pressure\": 1016, \"temp\": 8.31 }, \"weather\"\
-  : [{\"description\": \"scattered clouds\", \"icon\": \"03n\", \"id\": 802, \"main\"\
-  : \"Clouds\" } ], \"wind\": {\"deg\": 62, \"gust\": 0, \"speed\": 2.46 } }, {\"\
-  clouds\": {\"all\": 95 }, \"day_of_week\": \"Monday\", \"dt_txt\": \"2025-02-03\
-  \ 06:00:00\", \"main\": {\"feels_like\": 7.75, \"pressure\": 1017, \"temp\": 8.72\
-  \ }, \"rain\": 2.03, \"weather\": [{\"description\": \"light rain\", \"icon\": \"\
-  10n\", \"id\": 500, \"main\": \"Rain\" } ], \"wind\": {\"deg\": 70, \"gust\": 0,\
-  \ \"speed\": 1.94 } }, {\"clouds\": {\"all\": 91 }, \"day_of_week\": \"Monday\"\
-  , \"dt_txt\": \"2025-02-03 12:00:00\", \"main\": {\"feels_like\": 9.43, \"pressure\"\
-  : 1018, \"temp\": 9.43 }, \"rain\": 0.48, \"weather\": [{\"description\": \"light\
-  \ rain\", \"icon\": \"10d\", \"id\": 500, \"main\": \"Rain\" } ], \"wind\": {\"\
-  deg\": 40, \"gust\": 0, \"speed\": 1.32 } }, {\"clouds\": {\"all\": 22 }, \"day_of_week\"\
-  : \"Monday\", \"dt_txt\": \"2025-02-03 18:00:00\", \"main\": {\"feels_like\": 7.99,\
-  \ \"pressure\": 1020, \"temp\": 7.99 }, \"weather\": [{\"description\": \"few clouds\"\
-  , \"icon\": \"02n\", \"id\": 801, \"main\": \"Clouds\" } ], \"wind\": {\"deg\":\
-  \ 63, \"gust\": 0, \"speed\": 1.23 } }, {\"clouds\": {\"all\": 22 }, \"day_of_week\"\
-  : \"Tuesday\", \"dt_txt\": \"2025-02-04 00:00:00\", \"main\": {\"feels_like\": 3.56,\
-  \ \"pressure\": 1022, \"temp\": 5.23 }, \"weather\": [{\"description\": \"few clouds\"\
-  , \"icon\": \"02n\", \"id\": 801, \"main\": \"Clouds\" } ], \"wind\": {\"deg\":\
-  \ 70, \"gust\": 0, \"speed\": 2.08 } }, {\"clouds\": {\"all\": 3 }, \"day_of_week\"\
-  : \"Tuesday\", \"dt_txt\": \"2025-02-04 06:00:00\", \"main\": {\"feels_like\": 1.08,\
-  \ \"pressure\": 1023, \"temp\": 3.13 }, \"weather\": [{\"description\": \"clear\
+  \xB0C\", \"wind\": \"m/s\" } }\n```\ntext:\n```\nOver the next five days, Carsoli\
+  \ will experience a mix of clear skies and scattered clouds with temperatures ranging\
+  \ from 3\xB0C to 12\xB0C.There's a chance of occasional showers on Wednesday and\
+  \ Thursday,but overall, the weather appears mostly dry. Winds are generally moderate\
+  \ throughout the forecast period, with gusts reaching up to 2.77 m/s. The city will\
+  \ experience clear skies for most of the time, except for scattered clouds on Friday.\n\
+  ```\noutput:\n```\n{ \n  \"annotations\": [\n    {\"reason\" : \"The data shows\
+  \ that the lowest temperature will be 0.57\xB0C and highest 13.66\xB0C.\", \"text\"\
+  : \"temperatures ranging from 3\xB0C to 12\xB0C.\", \"annotation_type\": 0},\n \
+  \   {\"reason\" : \"There is no indication of rain showers on Wednesday or Thursday\
+  \ in the data.\", \"text\": \"There's a chance of occasional showers on Wednesday\
+  \ and Thursday,\", \"annotation_type\": 0}]\n    {\"reason\" : \"There are other\
+  \ occasions where the city will not experience clear skies, such as the light rain\
+  \ on Monday.\", \"text\": \"except for scattered clouds on Friday.\", \"annotation_type\"\
+  : 2},\n}\n\n\nExample #5:\n\ndata:\n```\n{\"city\": {\"country\": \"Italy\", \"\
+  name\": \"Carsoli\" }, \"list\": [{\"clouds\": {\"all\": 47 }, \"day_of_week\":\
+  \ \"Monday\", \"dt_txt\": \"2025-02-03 00:00:00\", \"main\": {\"feels_like\": 6.85,\
+  \ \"pressure\": 1016, \"temp\": 8.31 }, \"weather\": [{\"description\": \"scattered\
+  \ clouds\", \"icon\": \"03n\", \"id\": 802, \"main\": \"Clouds\" } ], \"wind\":\
+  \ {\"deg\": 62, \"gust\": 0, \"speed\": 2.46 } }, {\"clouds\": {\"all\": 95 }, \"\
+  day_of_week\": \"Monday\", \"dt_txt\": \"2025-02-03 06:00:00\", \"main\": {\"feels_like\"\
+  : 7.75, \"pressure\": 1017, \"temp\": 8.72 }, \"rain\": 2.03, \"weather\": [{\"\
+  description\": \"light rain\", \"icon\": \"10n\", \"id\": 500, \"main\": \"Rain\"\
+  \ } ], \"wind\": {\"deg\": 70, \"gust\": 0, \"speed\": 1.94 } }, {\"clouds\": {\"\
+  all\": 91 }, \"day_of_week\": \"Monday\", \"dt_txt\": \"2025-02-03 12:00:00\", \"\
+  main\": {\"feels_like\": 9.43, \"pressure\": 1018, \"temp\": 9.43 }, \"rain\": 0.48,\
+  \ \"weather\": [{\"description\": \"light rain\", \"icon\": \"10d\", \"id\": 500,\
+  \ \"main\": \"Rain\" } ], \"wind\": {\"deg\": 40, \"gust\": 0, \"speed\": 1.32 }\
+  \ }, {\"clouds\": {\"all\": 22 }, \"day_of_week\": \"Monday\", \"dt_txt\": \"2025-02-03\
+  \ 18:00:00\", \"main\": {\"feels_like\": 7.99, \"pressure\": 1020, \"temp\": 7.99\
+  \ }, \"weather\": [{\"description\": \"few clouds\", \"icon\": \"02n\", \"id\":\
+  \ 801, \"main\": \"Clouds\" } ], \"wind\": {\"deg\": 63, \"gust\": 0, \"speed\"\
+  : 1.23 } }, {\"clouds\": {\"all\": 22 }, \"day_of_week\": \"Tuesday\", \"dt_txt\"\
+  : \"2025-02-04 00:00:00\", \"main\": {\"feels_like\": 3.56, \"pressure\": 1022,\
+  \ \"temp\": 5.23 }, \"weather\": [{\"description\": \"few clouds\", \"icon\": \"\
+  02n\", \"id\": 801, \"main\": \"Clouds\" } ], \"wind\": {\"deg\": 70, \"gust\":\
+  \ 0, \"speed\": 2.08 } }, {\"clouds\": {\"all\": 3 }, \"day_of_week\": \"Tuesday\"\
+  , \"dt_txt\": \"2025-02-04 06:00:00\", \"main\": {\"feels_like\": 1.08, \"pressure\"\
+  : 1023, \"temp\": 3.13 }, \"weather\": [{\"description\": \"clear sky\", \"icon\"\
+  : \"01n\", \"id\": 800, \"main\": \"Clear\" } ], \"wind\": {\"deg\": 71, \"gust\"\
+  : 0, \"speed\": 2.1 } }, {\"clouds\": {\"all\": 45 }, \"day_of_week\": \"Tuesday\"\
+  , \"dt_txt\": \"2025-02-04 12:00:00\", \"main\": {\"feels_like\": 12.54, \"pressure\"\
+  : 1023, \"temp\": 13.66 }, \"weather\": [{\"description\": \"scattered clouds\"\
+  , \"icon\": \"03d\", \"id\": 802, \"main\": \"Clouds\" } ], \"wind\": {\"deg\":\
+  \ 236, \"gust\": 0, \"speed\": 0.5 } }, {\"clouds\": {\"all\": 2 }, \"day_of_week\"\
+  : \"Tuesday\", \"dt_txt\": \"2025-02-04 18:00:00\", \"main\": {\"feels_like\": 7.51,\
+  \ \"pressure\": 1025, \"temp\": 7.51 }, \"weather\": [{\"description\": \"clear\
   \ sky\", \"icon\": \"01n\", \"id\": 800, \"main\": \"Clear\" } ], \"wind\": {\"\
-  deg\": 71, \"gust\": 0, \"speed\": 2.1 } }, {\"clouds\": {\"all\": 45 }, \"day_of_week\"\
-  : \"Tuesday\", \"dt_txt\": \"2025-02-04 12:00:00\", \"main\": {\"feels_like\": 12.54,\
-  \ \"pressure\": 1023, \"temp\": 13.66 }, \"weather\": [{\"description\": \"scattered\
-  \ clouds\", \"icon\": \"03d\", \"id\": 802, \"main\": \"Clouds\" } ], \"wind\":\
-  \ {\"deg\": 236, \"gust\": 0, \"speed\": 0.5 } }, {\"clouds\": {\"all\": 2 }, \"\
-  day_of_week\": \"Tuesday\", \"dt_txt\": \"2025-02-04 18:00:00\", \"main\": {\"feels_like\"\
-  : 7.51, \"pressure\": 1025, \"temp\": 7.51 }, \"weather\": [{\"description\": \"\
-  clear sky\", \"icon\": \"01n\", \"id\": 800, \"main\": \"Clear\" } ], \"wind\":\
-  \ {\"deg\": 65, \"gust\": 0, \"speed\": 0.5 } }, {\"clouds\": {\"all\": 0 }, \"\
-  day_of_week\": \"Wednesday\", \"dt_txt\": \"2025-02-05 00:00:00\", \"main\": {\"\
-  feels_like\": 3, \"pressure\": 1028, \"temp\": 4.06 }, \"weather\": [{\"description\"\
-  : \"clear sky\", \"icon\": \"01n\", \"id\": 800, \"main\": \"Clear\" } ], \"wind\"\
-  : {\"deg\": 73, \"gust\": 0, \"speed\": 1.41 } }, {\"clouds\": {\"all\": 29 }, \"\
-  day_of_week\": \"Wednesday\", \"dt_txt\": \"2025-02-05 06:00:00\", \"main\": {\"\
-  feels_like\": -1.09, \"pressure\": 1029, \"temp\": 0.57 }, \"weather\": [{\"description\"\
-  : \"scattered clouds\", \"icon\": \"03n\", \"id\": 802, \"main\": \"Clouds\" } ],\
-  \ \"wind\": {\"deg\": 54, \"gust\": 1.32, \"speed\": 1.49 } }, {\"clouds\": {\"\
-  all\": 42 }, \"day_of_week\": \"Wednesday\", \"dt_txt\": \"2025-02-05 12:00:00\"\
-  , \"main\": {\"feels_like\": 8.15, \"pressure\": 1028, \"temp\": 9.35 }, \"weather\"\
+  deg\": 65, \"gust\": 0, \"speed\": 0.5 } }, {\"clouds\": {\"all\": 0 }, \"day_of_week\"\
+  : \"Wednesday\", \"dt_txt\": \"2025-02-05 00:00:00\", \"main\": {\"feels_like\"\
+  : 3, \"pressure\": 1028, \"temp\": 4.06 }, \"weather\": [{\"description\": \"clear\
+  \ sky\", \"icon\": \"01n\", \"id\": 800, \"main\": \"Clear\" } ], \"wind\": {\"\
+  deg\": 73, \"gust\": 0, \"speed\": 1.41 } }, {\"clouds\": {\"all\": 29 }, \"day_of_week\"\
+  : \"Wednesday\", \"dt_txt\": \"2025-02-05 06:00:00\", \"main\": {\"feels_like\"\
+  : -1.09, \"pressure\": 1029, \"temp\": 0.57 }, \"weather\": [{\"description\": \"\
+  scattered clouds\", \"icon\": \"03n\", \"id\": 802, \"main\": \"Clouds\" } ], \"\
+  wind\": {\"deg\": 54, \"gust\": 1.32, \"speed\": 1.49 } }, {\"clouds\": {\"all\"\
+  : 42 }, \"day_of_week\": \"Wednesday\", \"dt_txt\": \"2025-02-05 12:00:00\", \"\
+  main\": {\"feels_like\": 8.15, \"pressure\": 1028, \"temp\": 9.35 }, \"weather\"\
   : [{\"description\": \"scattered clouds\", \"icon\": \"03d\", \"id\": 802, \"main\"\
   : \"Clouds\" } ], \"wind\": {\"deg\": 263, \"gust\": 1.82, \"speed\": 2.36 } },\
   \ {\"clouds\": {\"all\": 5 }, \"day_of_week\": \"Wednesday\", \"dt_txt\": \"2025-02-05\
@@ -418,19 +427,20 @@ prompt_template: "Your task is to identify errors in the text and classify them.
   description\": \"few clouds\", \"icon\": \"02n\", \"id\": 801, \"main\": \"Clouds\"\
   \ } ], \"wind\": {\"deg\": 73, \"gust\": 1.86, \"speed\": 1.83 } } ], \"units\"\
   : {\"pressure\": \"hPa\", \"rain\": \"mm/h (6h)\", \"snow\": \"mm\", \"temp\": \"\
-  °C\", \"wind\": \"m/s\" } }\n```\ntext:\n```\nOver the next five days, Carsoli can\
-  \ expect varying cloud cover with periods of clear skies and scattered clouds. Temperatures\
-  \ will fluctuate, ranging from a low of around 2°C to a high of approximately 12°C.\
-  \ The city will experience gentle winds, with speeds generally between 1-3 m/s and\
-  \ occasional gusts. Pressure is expected to remain relatively stable, hovering around\
-  \ 1025-1030 hPa. Throughout the week, no precipitation is indicated in the forecast\
-  \ data.\n```\noutput:\n```\n{ \n  \"annotations\": [\n    {\"reason\": \"The data\
-  \ shows that the lowest temperature will be 0.57°C and highest 13.66°C.\" \"text\"\
-  : \"ranging from a low of around 2°C to a high of approximately 12°C., \"annotation_type\"\
-  : 0},\n    {\"reason\": \"There is a light rain indicated on Monday\", \"text\"\
-  : \"no precipitation is indicated in the forecast data., \"annotation_type\": 0}\n\
-  \  ]\n}\n\nNow, given the data:\n```\n{data}\n```\nannotate the errors in the corresponding\
-  \ text generated from the data:\n```\n{text}\n```"
+  \xB0C\", \"wind\": \"m/s\" } }\n```\ntext:\n```\nOver the next five days, Carsoli\
+  \ can expect varying cloud cover with periods of clear skies and scattered clouds.\
+  \ Temperatures will fluctuate, ranging from a low of around 2\xB0C to a high of\
+  \ approximately 12\xB0C. The city will experience gentle winds, with speeds generally\
+  \ between 1-3 m/s and occasional gusts. Pressure is expected to remain relatively\
+  \ stable, hovering around 1025-1030 hPa. Throughout the week, no precipitation is\
+  \ indicated in the forecast data.\n```\noutput:\n```\n{ \n  \"annotations\": [\n\
+  \    {\"reason\": \"The data shows that the lowest temperature will be 0.57\xB0\
+  C and highest 13.66\xB0C.\" \"text\": \"ranging from a low of around 2\xB0C to a\
+  \ high of approximately 12\xB0C., \"annotation_type\": 0},\n    {\"reason\": \"\
+  There is a light rain indicated on Monday\", \"text\": \"no precipitation is indicated\
+  \ in the forecast data., \"annotation_type\": 0}\n  ]\n}\n\nNow, given the data:\n\
+  ```\n{data}\n```\nannotate the errors in the corresponding text generated from the\
+  \ data:\n```\n{text}\n```"
 model: llama3.3:70b
 model_args: {}
 campaign_orig_id: gold-final-5shot-llama3-3

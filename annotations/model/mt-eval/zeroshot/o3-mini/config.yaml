@@ -2,9 +2,11 @@ annotation_span_categories:
 - name: Major
   description: An error that disrupts the flow and make the understandability of text
     difficult or impossible.
+  color: rgb(214, 39, 40)
 - name: Minor
   description: An error that does not disrupt the flow significantly and what the
     text is trying to say is still understandable.
+  color: rgb(227, 119, 194)
 prompt_template: 'Your task is to identify errors in the translation and classify
   them.
 

@@ -1,115 +1,61 @@
 annotation_span_categories:
 - name: Contradictory
   description: The fact contradicts the data.
+  color: rgb(214, 39, 40)
 - name: Not checkable
   description: The fact cannot be verified from the data.
+  color: rgb(148, 103, 189)
 - name: Misleading
   description: The fact is technically true, but leaves out important information
     or otherwise distorts the context.
+  color: rgb(230, 171, 2)
 - name: Incoherent
   description: The text uses unnatural phrasing or does not fit the discourse.
+  color: rgb(140, 86, 75)
 - name: Repetitive
   description: The fact has been already mentioned earlier in the text.
+  color: rgb(27, 158, 119)
 - name: Other
   description: The text is problematic for another reason.
-prompt_template: 'Your task is to identify errors in the text and classify them.
-
-
-  Output the errors as a JSON object with a single key "annotations". The value of
-  "annotations" is a list in which each object contains fields "reason", "text", and
-  "annotation_type". The value of "reason" is the short sentence justifying the annotation.
-  The value of "text" is the literal value of the identified span (we will later identify
-  the span using string matching). The value of "annotation_type" is an integer index
-  of the error based on the following list:
-
-
-  0: Contradictory (The fact contradicts the data.)
-
-  1: Not checkable (The fact cannot be verified from the data.)
-
-  2: Misleading (The fact is technically true, but leaves out important information
-  or otherwise distorts the context.)
-
-  3: Incoherent (The text uses unnatural phrasing or does not fit the discourse.)
-
-  4: Repetitive (The fact has been already mentioned earlier in the text.)
-
-  5: Other (The text is problematic for another reason.)
-
-
-  Examples:
-
-  - Contradictory: The lowest temperature does not drop below 4°C, but the text mentions
-  2°C.
-
-  - Not checkable: The text mentions that "both teams display aggressive play", which
-  cannot be checked from the data.
-
-  - Misleading: The tone of the text suggests there are many sensors out of which
-  just a few are listed here. However, according to the data, the device has exactly
-  these four sensors.
-
-  - Incoherent: The text states that both teams had "equal chances until the first
-  half ended scoreless." While this is technically true, the expression sounds unnatural
-  for a sport summary.
-
-  - Repetitive: The output text unnecessarily re-states information about a smartphone
-  battery that was mentioned earlier.
-
-  - Other: Use this as a last resort when you notice something else not covered by
-  the above categories.
-
-
-  Hints:
-
-  - Always try to annotate the longest continuous span (i.e., the whole fact instead
-  of a single word).
-
-  - Annotate only the spans that you are sure about. If you are not sure about an
-  annotation, skip it.
-
-  - Ignore subjective statements: for example "a lightweight smartphone" highly depends
-  on the context: you should not annotate these statements.
-
-  - Numerical conventions: For weather forecasts, we accept both precise numbers (e.g.
-  10.71°C) and the rounded ones (e.g. 11°C) as long as they agree with the data.
-
-  - Annotate only according to your own knowledge. If you are considering using an
-  external tool (Google, ChatGPT etc.), just skip that specific fact.
-
-
-  If there is nothing to annotate in the text, "annotations" will be an empty list.
-
-
-  Think about it step-by-step. You should enclose your chain of thoughts between the
-  <think> and </think> tags. Once you are ready, output the JSON object in the required
-  format.
-
-
-  Example:
-
-  ```
-
-  <think> ... chain of thoughts ... </think> { ... JSON object ... }
-
-  ```
-
-
-  Given the data:
-
-  ```
-
-  {data}
-
-  ```
-
-  annotate the errors in the corresponding text generated from the data:
-
-  ```
-
-  {text}
-
-  ```'
+  color: rgb(102, 102, 102)
+prompt_template: "Your task is to identify errors in the text and classify them.\n\
+  \nOutput the errors as a JSON object with a single key \"annotations\". The value\
+  \ of \"annotations\" is a list in which each object contains fields \"reason\",\
+  \ \"text\", and \"annotation_type\". The value of \"reason\" is the short sentence\
+  \ justifying the annotation. The value of \"text\" is the literal value of the identified\
+  \ span (we will later identify the span using string matching). The value of \"\
+  annotation_type\" is an integer index of the error based on the following list:\n\
+  \n0: Contradictory (The fact contradicts the data.)\n1: Not checkable (The fact\
+  \ cannot be verified from the data.)\n2: Misleading (The fact is technically true,\
+  \ but leaves out important information or otherwise distorts the context.)\n3: Incoherent\
+  \ (The text uses unnatural phrasing or does not fit the discourse.)\n4: Repetitive\
+  \ (The fact has been already mentioned earlier in the text.)\n5: Other (The text\
+  \ is problematic for another reason.)\n\nExamples:\n- Contradictory: The lowest\
+  \ temperature does not drop below 4\xB0C, but the text mentions 2\xB0C.\n- Not checkable:\
+  \ The text mentions that \"both teams display aggressive play\", which cannot be\
+  \ checked from the data.\n- Misleading: The tone of the text suggests there are\
+  \ many sensors out of which just a few are listed here. However, according to the\
+  \ data, the device has exactly these four sensors.\n- Incoherent: The text states\
+  \ that both teams had \"equal chances until the first half ended scoreless.\" While\
+  \ this is technically true, the expression sounds unnatural for a sport summary.\n\
+  - Repetitive: The output text unnecessarily re-states information about a smartphone\
+  \ battery that was mentioned earlier.\n- Other: Use this as a last resort when you\
+  \ notice something else not covered by the above categories.\n\nHints:\n- Always\
+  \ try to annotate the longest continuous span (i.e., the whole fact instead of a\
+  \ single word).\n- Annotate only the spans that you are sure about. If you are not\
+  \ sure about an annotation, skip it.\n- Ignore subjective statements: for example\
+  \ \"a lightweight smartphone\" highly depends on the context: you should not annotate\
+  \ these statements.\n- Numerical conventions: For weather forecasts, we accept both\
+  \ precise numbers (e.g. 10.71\xB0C) and the rounded ones (e.g. 11\xB0C) as long\
+  \ as they agree with the data.\n- Annotate only according to your own knowledge.\
+  \ If you are considering using an external tool (Google, ChatGPT etc.), just skip\
+  \ that specific fact.\n\nIf there is nothing to annotate in the text, \"annotations\"\
+  \ will be an empty list.\n\nThink about it step-by-step. You should enclose your\
+  \ chain of thoughts between the <think> and </think> tags. Once you are ready, output\
+  \ the JSON object in the required format.\n\nExample:\n```\n<think> ... chain of\
+  \ thoughts ... </think> { ... JSON object ... }\n```\n\nGiven the data:\n```\n{data}\n\
+  ```\nannotate the errors in the corresponding text generated from the data:\n```\n\
+  {text}\n```"
 model: deepseek-r1:70b
 model_args: {}
 campaign_orig_id: gold-final-cot-deepseek-r1

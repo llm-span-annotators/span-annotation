@@ -1,6 +1,8 @@
 annotation_span_categories:
 - name: Major
   description: A major error.
+  color: rgb(214, 39, 40)
 - name: Minor
   description: A minor error.
+  color: rgb(227, 119, 194)
 campaign_orig_id: wmt24-sample

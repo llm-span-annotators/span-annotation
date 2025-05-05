@@ -1,17 +1,23 @@
 annotation_span_categories:
 - name: Contradictory
   description: The fact contradicts the data.
+  color: rgb(214, 39, 40)
 - name: Not checkable
   description: The fact cannot be verified from the data.
+  color: rgb(148, 103, 189)
 - name: Misleading
   description: The fact is technically true, but leaves out important information
     or otherwise distorts the context.
+  color: rgb(230, 171, 2)
 - name: Incoherent
   description: The text uses unnatural phrasing or does not fit the discourse.
+  color: rgb(140, 86, 75)
 - name: Repetitive
   description: The fact has been already mentioned earlier in the text.
+  color: rgb(27, 158, 119)
 - name: Other
   description: The text is problematic for another reason.
+  color: rgb(102, 102, 102)
 prompt_template: 'Your task is to identify errors in the text and classify them.
 
 

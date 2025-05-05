@@ -14,28 +14,32 @@ annotation_span_categories:
     \ authority can be wrong, it is reasonable to defer to an authority to support\
     \ a claim, but the authority should not be the only justification to accept the\
     \ claim, otherwise the Appeal-to-Authority fallacy is committed.\n    "
+  color: '#020263'
 - name: Appeal_to_fear-prejudice
   description: "\n    Seeking to build support for an idea by instilling anxiety and/or\
     \ panic in the population towards an alternative.\n    In some cases the support\
     \ is built based on preconceived judgements.\n    Example 1: \"either we go to\
     \ war or we will perish\" (this is also aBlack and White fallacy))\n    Example\
     \ 2: \"we must stop those refugees as they are terrorists\"\n    "
+  color: '#008B8B'
 - name: Bandwagon
   description: "\n    Attempting to persuade the target audience to join in and take\
     \ the course of action because \"everyone else is taking the same action\".\n\
     \    Example 1: \"Would you vote for Clinton as president? 57% say yes\"\n   \
     \ Example 2: \"90% of citizens support our initiative. You should.\"\n    "
+  color: '#006400'
 - name: Black-and-White_Fallacy
   description: "\n    Presenting two alternative options as the only possibilities,\
     \ when in fact more possibilities exist. As an the extreme case, tell the audience\
     \ exactly what actions to take, eliminating any other possible choices (Dictatorship).\n\
     \    Example 1: \"You must be a Republican or Democrat. You are not a Democrat.\
     \ Therefore, you must be a Republican\"\n    Example 2: \"I thought you were a\
-    \ good person, but you weren’t at church today.\"\n    Explanation: The assumption\
+    \ good person, but you weren\u2019t at church today.\"\n    Explanation: The assumption\
     \ here is that if one doesn't attend chuch, one must be bad. Of course, good people\
-    \ exist who don’t go to church, and good church-going people could have had a\
-    \ really good reason not to be in church.\n    Example 3: \"There is no alternative\
+    \ exist who don\u2019t go to church, and good church-going people could have had\
+    \ a really good reason not to be in church.\n    Example 3: \"There is no alternative\
     \ to war\"\n    "
+  color: '#B8860B'
 - name: Causal_Oversimplification
   description: "\n    Assuming a single cause or reason when there are actually multiple\
     \ causes for an issue.\n    It includes transferring blame to one person or group\
@@ -48,33 +52,39 @@ annotation_span_categories:
     \ the claims being made, the arguer is blaming a natural disaster on a group of\
     \ people.\n    Example 3: \"If France had not have declared war on Germany then\
     \ world war two would have never happened.\"\n    "
+  color: '#8B008B'
 - name: Doubt
   description: ''
+  color: '#FF8C00'
 - name: Exaggeration,Minimisation
   description: "\n    Either representing something in an excessive manner: making\
     \ things larger, better, worse (e.g., \"the best of the best\", \"quality guaranteed\"\
     ) or making something seem less important or smaller than it really is (e.g.,\
     \ saying that an insult was just a joke).\n    Example 1: \"Democrats bolted as\
-    \ soon as Trump’s speech ended in an apparent effort to signal they can’t even\
-    \ stomach being in the same room as the president \"\n    Example 2: \"We’re going\
-    \ to have unbelievable intelligence\"\n    Example 3: \"I was not fighting with\
-    \ her; we were just playing.\"\n    "
+    \ soon as Trump\u2019s speech ended in an apparent effort to signal they can\u2019\
+    t even stomach being in the same room as the president \"\n    Example 2: \"We\u2019\
+    re going to have unbelievable intelligence\"\n    Example 3: \"I was not fighting\
+    \ with her; we were just playing.\"\n    "
+  color: '#4B0082'
 - name: Flag-Waving
   description: "\n    Playing on strong national feeling (or to any group; e.g., race,\
     \ gender, political preference) to justify or promote an action or idea\n    Example\
     \ 1: \"Patriotism mean no questions\" (this is also a slogan)\n    Example 2:\
     \ \"Entering this war will make us have a better future in our country.\"\n  \
     \  "
+  color: '#8B4513'
 - name: Loaded_Language
   description: "\n    Using specific words and phrases with strong emotional implications\
     \ (either positive or negative) to influence an audience.\n    Example 1: [...]\
-    \ a lone lawmaker’s childish shouting.\n    Example 2: How stupid and petty things\
-    \ have become in Washington\n    "
+    \ a lone lawmaker\u2019s childish shouting.\n    Example 2: How stupid and petty\
+    \ things have become in Washington\n    "
+  color: '#2F4F4F'
 - name: Name_Calling,Labeling
   description: "\n    Labeling the object of the propaganda campaign as either something\
     \ the target audience fears, hates, finds undesirable or loves, praises.\n   \
     \ Example 1: \"Republican congressweasels\", \"Bush the Lesser\" (note that lesser\
     \ does not refer to \"the second\", but it is pejorative)\n    "
+  color: '#556B2F'
 - name: Obfuscation,Intentional_Vagueness,Confusion
   description: "\n    Using words which are deliberately not clear so that the audience\
     \ may have its own interpretations.\n    For example when an unclear phrase with\
@@ -85,55 +95,49 @@ annotation_span_categories:
     \ here. In the first case it means listen to their personal account of the experience\
     \ of being a victim of theft. Empathize with them. In the second case \"listen\
     \ to\" means carry out a punishment of their choice.\n    "
+  color: '#A0522D'
 - name: Red_Herring
   description: "\n    Introducing irrelevant material to the issue being discussed,\
     \ so that everyone's attention is diverted away from the points made.\n    Example\
-    \ 1: In politics, defending one’s own policies regarding public safety - “I have\
-    \ worked hard to help eliminate criminal activity. What we need is economic growth\
-    \ that can only come from the hands of leadership.”\n    Example 2: \"You may\
-    \ claim that the death penalty is an ineffective deterrent against crime -- but\
-    \ what about the victims of crime? How do you think surviving family members feel\
-    \ when they see the man who murdered their son kept in prison at their expense?\
-    \ Is it right that they should pay for their son's murderer to be fed and housed?\"\
-    \n    "
+    \ 1: In politics, defending one\u2019s own policies regarding public safety -\
+    \ \u201CI have worked hard to help eliminate criminal activity. What we need is\
+    \ economic growth that can only come from the hands of leadership.\u201D\n   \
+    \ Example 2: \"You may claim that the death penalty is an ineffective deterrent\
+    \ against crime -- but what about the victims of crime? How do you think surviving\
+    \ family members feel when they see the man who murdered their son kept in prison\
+    \ at their expense? Is it right that they should pay for their son's murderer\
+    \ to be fed and housed?\"\n    "
+  color: '#8B0000'
 - name: Reductio_ad_hitlerum
   description: "\n    Persuading an audience to disapprove an action or idea by suggesting\
     \ that the idea is popular with groups hated in contempt by the target audience.\
     \ It can refer to any person or concept with a negative connotation.\n    Example\
     \ 1: \"Do you know who else was doing that ? Hitler!\"\n    Example 2: \"Only\
     \ one kind of person can think in that way: a communist.\"\n    "
+  color: '#9932CC'
 - name: Repetition
   description: "\n    Repeating the same message over and over again so that the audience\
     \ will eventually accept it.\n    "
+  color: '#8f0e42'
 - name: Slogans
   description: "\n    A brief and striking phrase that may include labeling and stereotyping.\
     \ Slogans tend to act as emotional appeals.\n    Example 1: \"The more women at\
     \ war . . . the sooner we win.\"\n    Example 2: \"Make America great again!\"\
     \n    "
+  color: '#095700'
 - name: Straw_Men
-  description: '
-
-    When an opponent''s proposition is substituted with a similar one which is then
-    refuted in place of the original proposition.
-
-
-    Example 1: Zebedee: What is your view on the Christian God?
-
-    Mike: I don’t believe in any gods, including the Christian one.
-
-    Zebedee: So you think that we are here by accident, and all this design in nature
-    is pure chance, and the universe just created itself?
-
-    Mike: You got all that from me stating that I just don’t believe in any gods?
-
-
-    Explanation: Mike made one claim: that he does not believe in any gods. From that,
-    we can deduce a few things, like he is not a theist, he is not a practicing Christian,
-    Catholic, Jew, or a member of any other religion that requires the belief in a
-    god, but we cannot deduce that he believes we are all here by accident, nature
-    is chance, and the universe created itself.
-
-    '
+  description: "\nWhen an opponent's proposition is substituted with a similar one\
+    \ which is then refuted in place of the original proposition.\n\nExample 1: Zebedee:\
+    \ What is your view on the Christian God?\nMike: I don\u2019t believe in any gods,\
+    \ including the Christian one.\nZebedee: So you think that we are here by accident,\
+    \ and all this design in nature is pure chance, and the universe just created\
+    \ itself?\nMike: You got all that from me stating that I just don\u2019t believe\
+    \ in any gods?\n\nExplanation: Mike made one claim: that he does not believe in\
+    \ any gods. From that, we can deduce a few things, like he is not a theist, he\
+    \ is not a practicing Christian, Catholic, Jew, or a member of any other religion\
+    \ that requires the belief in a god, but we cannot deduce that he believes we\
+    \ are all here by accident, nature is chance, and the universe created itself.\n"
+  color: '#FFD700'
 - name: Thought-terminating_Cliches
   description: '
 
@@ -150,6 +154,7 @@ annotation_span_categories:
     human nature."
 
     '
+  color: '#FF4500'
 - name: Whataboutism
   description: '
 
@@ -165,4 +170,5 @@ annotation_span_categories:
     Example 2: "Qatar spending profusely on Neymar, not fighting terrorism"
 
     '
+  color: '#8B4513'
 campaign_orig_id: ptc
