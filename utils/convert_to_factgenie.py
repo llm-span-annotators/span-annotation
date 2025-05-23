@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 
-import os
-import shutil
-import json
-import yaml
 import argparse
 import csv
-from pathlib import Path
+import json
+import os
+import shutil
 from datetime import datetime
+from pathlib import Path
+
+import yaml
 
 # Define relative paths from the script's location
 SCRIPT_DIR = Path(__file__).parent
@@ -22,6 +23,7 @@ INPUTS_DEST = FACTGENIE_BASE / "data" / "inputs"
 OUTPUTS_DEST = FACTGENIE_BASE / "data" / "outputs"
 CONFIG_DEST_DIR = FACTGENIE_BASE / "config"
 
+
 def find_campaign_folders(src_dir):
     """Finds folders containing annotations.jsonl recursively."""
     campaign_folders = []
@@ -30,13 +32,14 @@ def find_campaign_folders(src_dir):
             campaign_folders.append(Path(root))
     return campaign_folders
 
+
 def find_input_folders(src_dir):
     """Finds leaf folders (no subdirectories) recursively."""
     input_folders = []
     for root, dirs, _ in os.walk(src_dir):
-        if not dirs: # If the directory has no subdirectories
-             # Check if it's not an ignored directory (like .git)
-            if not Path(root).name.startswith('.'):
+        if not dirs:  # If the directory has no subdirectories
+            # Check if it's not an ignored directory (like .git)
+            if not Path(root).name.startswith("."):
                 input_folders.append(Path(root))
     # Filter out potential parent directories if a subdirectory was already chosen
     final_folders = []
@@ -54,7 +57,7 @@ def find_input_folders(src_dir):
 def transform_config(config_path, dest_folder):
     """Transforms config.yaml to metadata.json."""
     try:
-        with open(config_path, 'r') as f:
+        with open(config_path, "r") as f:
             config_data = yaml.safe_load(f)
     except Exception as e:
         print(f"Error reading or parsing {config_path}: {e}")
@@ -69,11 +72,10 @@ def transform_config(config_path, dest_folder):
     # Add colors to categories if missing
     categories = config_data.get("annotation_span_categories", [])
 
-    
     if "prompt_template" in config_data:
         # Model campaign
         metadata["mode"] = "llm_eval"
-        metadata["status"] = "finished" # Default status
+        metadata["status"] = "finished"  # Default status
         metadata["config"] = {
             "prompt_template": config_data.get("prompt_template", ""),
             "model": config_data.get("model", ""),
@@ -83,18 +85,22 @@ def transform_config(config_path, dest_folder):
     else:
         # Human campaign
         metadata["mode"] = "crowdsourcing"
-        metadata["status"] = "idle" # Default status
+        metadata["status"] = "idle"  # Default status
         metadata["config"] = {
             "annotator_instructions": config_data.get("annotator_instructions", ""),
-            "annotation_granularity": config_data.get("annotation_granularity", "words"),
-            "annotation_overlap_allowed": config_data.get("annotation_overlap_allowed", True),
+            "annotation_granularity": config_data.get(
+                "annotation_granularity", "words"
+            ),
+            "annotation_overlap_allowed": config_data.get(
+                "annotation_overlap_allowed", True
+            ),
             "annotation_span_categories": categories,
             "annotators_per_example": config_data.get("annotators_per_example", 1),
         }
 
     metadata_path = dest_folder / "metadata.json"
     try:
-        with open(metadata_path, 'w') as f:
+        with open(metadata_path, "w") as f:
             json.dump(metadata, f, indent=4)
     except Exception as e:
         print(f"Error writing {metadata_path}: {e}")
@@ -103,46 +109,102 @@ def transform_config(config_path, dest_folder):
 def create_db_csv(annotations_file, dest_folder):
     """Creates a db.csv file from annotations.jsonl."""
     db_file = dest_folder / "db.csv"
-    
+
     try:
         # Read annotations from the JSONL file
         annotations = []
-        with open(annotations_file, 'r') as f:
+        with open(annotations_file, "r") as f:
             for line in f:
                 if line.strip():  # Skip empty lines
                     try:
                         annotation = json.loads(line)
                         annotations.append(annotation)
                     except json.JSONDecodeError:
-                        print(f"    Warning: Skipping invalid JSON line in {annotations_file}")
-        
+                        print(
+                            f"    Warning: Skipping invalid JSON line in {annotations_file}"
+                        )
+
+        # Track existing combinations and adjust annotator_group as needed
+        seen_combinations = (
+            {}
+        )  # (dataset, split, setup_id, example_idx) -> max_annotator_group
+
+        # First pass to identify duplicates and assign new annotator_group values
+        for i in range(len(annotations)):
+            annotation = annotations[i]
+            dataset = annotation.get("dataset", "")
+            split = annotation.get("split", "")
+            example_idx = annotation.get("example_idx", "")
+            setup_id = annotation.get("setup_id", "")
+            annotator_group = annotation.get("annotator_group", 0)
+
+            # Create a key for tracking unique combinations
+            key = (dataset, split, setup_id, example_idx)
+
+            if key in seen_combinations:
+                # If we've seen this combination and current annotator_group is not higher
+                # than the max we've seen, increase it
+                if annotator_group <= seen_combinations[key]:
+                    annotations[i]["annotator_group"] = seen_combinations[key] + 1
+                    seen_combinations[key] = annotations[i]["annotator_group"]
+                else:
+                    # Current annotator_group is already higher than what we've seen
+                    seen_combinations[key] = annotator_group
+            else:
+                # First time seeing this combination
+                seen_combinations[key] = annotator_group
+
         # Create the CSV file
-        with open(db_file, 'w', newline='') as f:
+        with open(db_file, "w", newline="") as f:
             writer = csv.writer(f)
             # Write header
-            writer.writerow(['dataset', 'split', 'example_idx', 'setup_id', 'annotator_id', 
-                            'annotator_group', 'status', 'start', 'end'])
-            
+            writer.writerow(
+                [
+                    "dataset",
+                    "split",
+                    "example_idx",
+                    "setup_id",
+                    "annotator_id",
+                    "annotator_group",
+                    "status",
+                    "start",
+                    "end",
+                ]
+            )
+
             # Write data rows
             for annotation in annotations:
-                dataset = annotation.get('dataset', '')
-                split = annotation.get('split', '')
-                example_idx = annotation.get('example_idx', '')
-                setup_id = annotation.get('setup_id', '')
-                annotator_group = annotation.get('annotator_group', 0)
-                
+                dataset = annotation.get("dataset", "")
+                split = annotation.get("split", "")
+                example_idx = annotation.get("example_idx", "")
+                setup_id = annotation.get("setup_id", "")
+                # Use the potentially updated annotator_group
+                annotator_group = annotation.get("annotator_group", 0)
+
                 # Set fixed values
-                annotator_id = 'default'
-                status = 'finished'
-                start = ''
-                end = ''
-                
-                writer.writerow([dataset, split, example_idx, setup_id, annotator_id,
-                                annotator_group, status, start, end])
-        
+                annotator_id = "default"
+                status = "finished"
+                start = ""
+                end = ""
+
+                writer.writerow(
+                    [
+                        dataset,
+                        split,
+                        example_idx,
+                        setup_id,
+                        annotator_id,
+                        annotator_group,
+                        status,
+                        start,
+                        end,
+                    ]
+                )
+
         print(f"    Created db.csv with {len(annotations)} entries")
     except Exception as e:
         print(f"    Error creating db.csv: {e}")
+
 
 def process_annotations(src_dir, dest_dir):
     """Copies and transforms annotation campaign folders."""
@@ -158,7 +220,7 @@ def process_annotations(src_dir, dest_dir):
         # Convert full path to dash-separated name
         # Remove the base src_dir from path and convert separators to dashes
         relative_path = src_folder.relative_to(src_dir)
-        campaign_name = str(relative_path).replace(os.sep, '-')
+        campaign_name = str(relative_path).replace(os.sep, "-")
         dest_campaign_folder = dest_dir / campaign_name
         print(f"  Processing campaign: {campaign_name} (from {src_folder})")
 
@@ -227,7 +289,7 @@ def process_outputs(src_dir, dest_dir):
         print(f"Source directory {src_dir} does not exist. Skipping outputs.")
         return
 
-    dest_dir.parent.mkdir(parents=True, exist_ok=True) # Ensure parent data/ exists
+    dest_dir.parent.mkdir(parents=True, exist_ok=True)  # Ensure parent data/ exists
     try:
         shutil.copytree(src_dir, dest_dir, dirs_exist_ok=True)
         print(f"Copied outputs directory to {dest_dir}")
@@ -262,18 +324,21 @@ login:
   username: admin
 """
     try:
-        with open(config_path, 'w') as f:
+        with open(config_path, "w") as f:
             f.write(config_content.strip())
         print("FactGenie config file created successfully.")
     except Exception as e:
         print(f"Error writing FactGenie config file: {e}")
 
+
 def main():
-    parser = argparse.ArgumentParser(description="Transform annotation data for FactGenie.")
+    parser = argparse.ArgumentParser(
+        description="Transform annotation data for FactGenie."
+    )
     parser.add_argument(
         "--host-prefix",
         default="/",
-        help="Host prefix for the FactGenie config (e.g., '/factgenie')."
+        help="Host prefix for the FactGenie config (e.g., '/factgenie').",
     )
     args = parser.parse_args()
 
@@ -288,10 +353,11 @@ def main():
     # 3. Process Outputs
     process_outputs(OUTPUTS_SRC, OUTPUTS_DEST)
 
-    # 4. Create FactGenie Config
+    # # 4. Create FactGenie Config
     create_factgenie_config(CONFIG_DEST_DIR, "config.yml", args.host_prefix)
 
     print("Data transformation complete.")
+
 
 if __name__ == "__main__":
     main()
