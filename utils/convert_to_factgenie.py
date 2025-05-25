@@ -123,6 +123,16 @@ def create_db_csv(annotations_file, dest_folder):
                         print(
                             f"    Warning: Skipping invalid JSON line in {annotations_file}"
                         )
+        # Sort annotations by dataset, split, setup_id, example_idx, annotator_group
+        annotations.sort(
+            key=lambda x: (
+                x.get("dataset", ""),
+                x.get("split", ""),
+                x.get("setup_id", ""),
+                x.get("example_idx", ""),
+                x["metadata"].get("annotator_group", 0),
+            )
+        )
 
         # Track existing combinations and adjust annotator_group as needed
         seen_combinations = (
@@ -136,7 +146,7 @@ def create_db_csv(annotations_file, dest_folder):
             split = annotation.get("split", "")
             example_idx = annotation.get("example_idx", "")
             setup_id = annotation.get("setup_id", "")
-            annotator_group = annotation.get("annotator_group", 0)
+            annotator_group = annotation["metadata"]["annotator_group"]
 
             # Create a key for tracking unique combinations
             key = (dataset, split, setup_id, example_idx)
@@ -145,8 +155,8 @@ def create_db_csv(annotations_file, dest_folder):
                 # If we've seen this combination and current annotator_group is not higher
                 # than the max we've seen, increase it
                 if annotator_group <= seen_combinations[key]:
-                    annotations[i]["annotator_group"] = seen_combinations[key] + 1
-                    seen_combinations[key] = annotations[i]["annotator_group"]
+                    annotations[i]["metadata"]["annotator_group"] = seen_combinations[key] + 1
+                    seen_combinations[key] = annotations[i]["metadata"]["annotator_group"]
                 else:
                     # Current annotator_group is already higher than what we've seen
                     seen_combinations[key] = annotator_group
@@ -179,7 +189,7 @@ def create_db_csv(annotations_file, dest_folder):
                 example_idx = annotation.get("example_idx", "")
                 setup_id = annotation.get("setup_id", "")
                 # Use the potentially updated annotator_group
-                annotator_group = annotation.get("annotator_group", 0)
+                annotator_group = annotation["metadata"]["annotator_group"]
 
                 # Set fixed values
                 annotator_id = "default"
