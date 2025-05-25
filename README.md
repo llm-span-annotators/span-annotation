@@ -73,28 +73,30 @@ Each line in an annotations.jsonl file contains a JSON object with:
 - `annotator_group`: Annotator group (a single output can have annotation sets from different groups).
 - `thinking_trace` (only DeepSeek-R1 and Llama 3.3-CoT): Reasoning trace of the model.
 
+## Installing factgenie
+For visualizing the data and replicating evaluation, `factgenie` needs to be installed.
 
-## Visualizing the Data
-To visualize the data and annotations using `factgenie`:
-
-### Setup
+### Steps
 
 1. Initialize the `factgenie` submodule:
    ```bash
    git submodule update --init --recursive
    ```
-
-2. Convert the data to `factgenie` format:
-   ```bash
-   python utils/convert_to_factgenie.py
-   ```
-
-3. Install `factgenie` as an editable package:
+2. Install `factgenie` as an editable package:
    ```bash
    cd factgenie
    pip install -e .
    ```
-4. Start the `factgenie` server:
+
+## Visualizing the Data
+To visualize the data and annotations using `factgenie`, make sure that factgenie is installed (see [Installing factgenie](#installing-factgenie) section above).
+
+### Steps
+1. Convert the data to `factgenie` format:
+   ```bash
+   python utils/convert_to_factgenie.py
+   ```
+2. Start the `factgenie` server:
 ```bash
 factgenie run --port=8890 --host=127.0.0.1
 ```
@@ -105,3 +107,26 @@ In the web interface, you'll be able to:
 - Browse through different annotation campaigns.
 - View the span annotations overlaid on the text.
 - Compare annotations from different sources (human vs. model).
+
+## Evaluation
+To replicate our results, you can use the provided evaluation scripts. The main logic is in the script `scripts/run_eval.sh`. Make sure `factgenie` is installed (see [Installing factgenie](#installing-factgenie) section above).
+
+The evaluation script supports multiple commands for different tasks and datasets:
+
+```bash
+cd scripts
+chmod +x run_eval.sh
+
+# Run specific evaluations (examples)
+./run_eval.sh d2t_test
+./run_eval.sh mt_zeroshot
+./run_eval.sh propaganda_zeroshot
+
+# Run all evaluations
+./run_eval.sh all
+
+# See all available commands
+./run_eval.sh help
+```
+
+Results will be saved in the `scripts/evaluation/results/` directory in CSV format.
