@@ -2,8 +2,9 @@
 
 # Path to the Python evaluation script
 EVAL_SCRIPT_PATH="./eval.py"
-# ALL_MODELS=(llama3-3 deepseek-r1 gpt4o o3-mini gemini-2-0-flash-thinking claude-3-7-sonnet)
-ALL_MODELS=(llama3-3)
+
+ALL_MODELS=(llama3-3 deepseek-r1 gpt4o o3-mini gemini-2-0-flash-thinking claude-3-7-sonnet)
+
 # Group ids of internal annotators
 INTERNAL_GROUPS=("0" "2" "3" "4" "7" "8" "9")
 
