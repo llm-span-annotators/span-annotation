@@ -12,7 +12,7 @@ The `inputs` directory contains the source data:
 
 - **mt-eval**: A sample from the [WMT24 dataset](https://www2.statmt.org/wmt24/mtdata/) (sampled ids provided in `utils/wmt_sample.csv`).
 
-Note that there are no inputs for the propaganda task.
+The inputs for the propaganda task are identical to the outputs (see below).
 
 ### Outputs Directory
 
