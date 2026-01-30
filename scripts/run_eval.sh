@@ -5,6 +5,8 @@ EVAL_SCRIPT_PATH="./eval.py"
 
 ALL_MODELS=(llama3-3 deepseek-r1 gpt4o o3-mini gemini-2-0-flash-thinking claude-3-7-sonnet)
 
+LANG_PAIRS=(en-uk en-cs en-es en-hi en-is en-ja en-ru en-zh)
+
 # Group ids of internal annotators
 INTERNAL_GROUPS=("0" "2" "3" "4" "7" "8" "9")
 
@@ -15,17 +17,17 @@ show_usage() {
     echo "Usage: $0 <command>"
     echo ""
     echo "Available commands:"
-    echo "  d2t_dev                    - D2T development split evaluation"
-    echo "  d2t_dev_prompt_styles      - D2T dev with different prompt styles"
-    echo "  d2t_test                   - D2T test split evaluation"
-    echo "  d2t_test_by_domain         - D2T test by domain (football, gsmarena, openweather)"
-    echo "  d2t_iaa                    - D2T Inter-Annotator Agreement"
-    echo "  d2t_test_iaa               - D2T test IAA between annotators"
-    echo "  d2t_test_iaa_internal      - D2T internal IAA evaluation"
-    echo "  mt_zeroshot                - Machine Translation zeroshot evaluation"
-    echo "  mt_cot                     - Machine Translation chain-of-thought evaluation"
-    echo "  mt_stats                   - Machine Translation statistics"
-    echo "  mt_iaa_full                - Machine Translation human IAA"
+    echo "  d2t_dev                    - D2T-eval development split evaluation"
+    echo "  d2t_dev_prompt_styles      - D2T-eval dev with different prompt styles"
+    echo "  d2t_test                   - D2T-eval test split evaluation"
+    echo "  d2t_test_by_domain         - D2T-eval test by domain (football, gsmarena, openweather)"
+    echo "  d2t_iaa                    - D2T-eval inter-annotator agreement split"
+    echo "  d2t_test_iaa               - D2T-eval IAA between annotators on test split"
+    echo "  d2t_test_iaa_internal      - D2T-eval internal IAA evaluation"
+    echo "  mt_zeroshot                - MT-eval zeroshot evaluation"
+    echo "  mt_cot                     - MT-eval chain-of-thought evaluation"
+    echo "  mt_stats                   - MT-eval statistics"
+    echo "  mt_iaa_full                - MT-eval human IAA"
     echo "  propaganda_zeroshot        - Propaganda detection zeroshot"
     echo "  propaganda_5shot           - Propaganda detection 5-shot"
     echo "  propaganda_cot             - Propaganda detection chain-of-thought"
@@ -52,7 +54,7 @@ run_d2t_dev() {
 run_d2t_dev_prompt_styles() {
     echo "Running D2T dev prompt styles evaluation..."
     python3 ${EVAL_SCRIPT_PATH} \
-        --prompt-styles cot minimalistic nohints noexamples noreason \
+        --prompt-styles 5shot cot minimalistic nohints noexamples noreason \
         --model-names llama3-3 deepseek-r1 \
         --gold-group 0 \
         --gold-campaign "human-d2t-eval-dev" \
@@ -169,9 +171,12 @@ run_mt_cot() {
 
 run_mt_stats() {
     echo "Running MT statistics..."
-    factgenie stats counts \
-     --output results/stats_mt.csv \
-     --campaign human-mt-eval
+    for langpair in "${LANG_PAIRS[@]}"; do
+        factgenie stats counts \
+            --output "results/stats_mt_${langpair}.json" \
+            --campaign "human-mt-eval" \
+            --include-split "${langpair}"
+    done
 }
 
 run_mt_iaa_full() {
